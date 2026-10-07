@@ -237,3 +237,4 @@ export const AdminBookingTable: React.FC<AdminBookingTableProps> = ({
     </div>
   );
 };
+

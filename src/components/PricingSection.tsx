@@ -101,3 +101,4 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
     </section>
   );
 };
+

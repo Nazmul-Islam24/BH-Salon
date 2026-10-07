@@ -84,3 +84,4 @@ export const StylistsSection: React.FC<StylistsSectionProps> = ({
     </section>
   );
 };
+

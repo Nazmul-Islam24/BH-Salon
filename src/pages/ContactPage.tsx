@@ -25,7 +25,7 @@ export const ContactPage: React.FC = () => {
         {/* Background stylish hair & beautiful women image (If removed or commented out, underlying bg color displays seamlessly) */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <img
-            src="./src/assets/images/Lume-Salon.jpg"
+            src="./src/assets/images/Lume-Salon.avif"
             alt="LUMÉ concierge and studio appointments"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-40 mix-blend-multiply scale-105"
@@ -269,3 +269,4 @@ export const ContactPage: React.FC = () => {
     </div>
   );
 };
+

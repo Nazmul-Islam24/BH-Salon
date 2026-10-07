@@ -29,3 +29,4 @@ export const MobileStickyBar: React.FC<MobileStickyBarProps> = ({ onOpenBooking 
     </div>
   );
 };
+

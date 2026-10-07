@@ -47,7 +47,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ onOpenBooking }) => {
         {/* Background stylish hair & beautiful women image (If removed or commented out, underlying bg color displays seamlessly) */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <img
-            src="./src/assets/images/gallery.jpg"
+            src="./src/assets/images/gallery.avif"
             alt="LUMÉ visual portfolio and transformations"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-40 mix-blend-multiply scale-105"
@@ -355,3 +355,4 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ onOpenBooking }) => {
     </div>
   );
 };
+

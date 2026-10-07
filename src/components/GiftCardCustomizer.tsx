@@ -378,3 +378,4 @@ export const GiftCardCustomizer: React.FC<GiftCardCustomizerProps> = ({
     </div>
   );
 };
+

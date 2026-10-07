@@ -48,7 +48,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
         {/* Background stylish hair & beautiful women image (If removed or commented out, underlying bg color displays seamlessly) */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <img
-            src="./src/assets/images/ser1.jpg"
+            src="./src/assets/images/ser1.avif"
             alt="LUMÉ bespoke salon hair artistry"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-50 mix-blend-multiply scale-105"
@@ -379,3 +379,4 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
     </div>
   );
 };
+

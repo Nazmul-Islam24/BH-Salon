@@ -62,7 +62,7 @@ export const PricingPage: React.FC<PricingPageProps> = ({
         {/* Background stylish hair & beautiful women image (If removed or commented out, underlying bg color displays seamlessly) */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <img
-            src="./src/assets/images/price.jpg"
+            src="./src/assets/images/price.avif"
             alt="LUMÉ transparent luxury pricing and artistry"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-35 mix-blend-multiply scale-105"
@@ -415,3 +415,4 @@ export const PricingPage: React.FC<PricingPageProps> = ({
     </div>
   );
 };
+

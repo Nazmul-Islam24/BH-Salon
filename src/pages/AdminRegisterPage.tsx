@@ -209,3 +209,4 @@ export const AdminRegisterPage: React.FC<AdminRegisterPageProps> = ({
     </div>
   );
 };
+

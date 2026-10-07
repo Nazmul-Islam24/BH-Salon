@@ -16,33 +16,33 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
 
   // Exactly 14 curated, highly popular and essential salon services (without numbering as requested)
   const signatureServices = [
-    { id: 'tb-eyebrows', name: 'Precision Eyebrow Threading', category: 'Threading & Brows', cardName: 'Facial Hair Removal', price: 'From $15', duration: '15 min', image: './src/assets/images/facial-hair-removal.jpg', desc: 'Antibacterial organic twisted cotton hair removal for clean brow definition.' },
+    { id: 'tb-eyebrows', name: 'Precision Eyebrow Threading', category: 'Threading & Brows', cardName: 'Facial Hair Removal', price: 'From $15', duration: '15 min', image: './src/assets/images/facial-hair-removal.avif', desc: 'Antibacterial organic twisted cotton hair removal for clean brow definition.' },
 
-    { id: 'tb-brow-lamination-wax', name: 'Brow Lamination, Tint & Wax', category: 'Threading & Brows', cardName: 'Tinting & Lamination', price: 'From $75', duration: '45 min', image: './src/assets/images/tinting-lamination2.jpg', desc: 'Feathered architectural brow redirection with custom vegetable tint.' },
+    { id: 'tb-brow-lamination-wax', name: 'Brow Lamination, Tint & Wax', category: 'Threading & Brows', cardName: 'Tinting & Lamination', price: 'From $75', duration: '45 min', image: './src/assets/images/tinting-lamination2.avif', desc: 'Feathered architectural brow redirection with custom vegetable tint.' },
 
-    { id: 'h-wash-cut-blowdry', name: 'Wash, Cut & Blow-Dry', category: 'Hair', cardName: 'Cut & Finish', price: 'From $85', duration: '1 hr', image: './src/assets/images/cut-finish.jpg', desc: 'Tailored architectural sectioning, botanical wash ritual, and thermal blowout.' },
+    { id: 'h-wash-cut-blowdry', name: 'Wash, Cut & Blow-Dry', category: 'Hair', cardName: 'Cut & Finish', price: 'From $85', duration: '1 hr', image: './src/assets/images/cut-finish.avif', desc: 'Tailored architectural sectioning, botanical wash ritual, and thermal blowout.' },
 
-    { id: 'h-restyle', name: 'Signature Hair Restyle', category: 'Hair', cardName: 'Cut & Finish', price: 'From $95', duration: '1 hr 15 min', image: './src/assets/images/2home-hero.jpg', desc: 'Complete structural silhouette transformation tailored to facial anatomy.' },
+    { id: 'h-restyle', name: 'Signature Hair Restyle', category: 'Hair', cardName: 'Cut & Finish', price: 'From $95', duration: '1 hr 15 min', image: './src/assets/images/2home-hero.avif', desc: 'Complete structural silhouette transformation tailored to facial anatomy.' },
 
-    { id: 'h-wash-blowdry', name: 'Artisan Thermal Blowout', category: 'Hair', cardName: 'Blow-Dry & Styling', price: 'From $50', duration: '45 min', image: './src/assets/images/blow-dry-styling.jpg', desc: 'Round ceramic brush sculpt creating long-lasting voluminous bounce.' },
+    { id: 'h-wash-blowdry', name: 'Artisan Thermal Blowout', category: 'Hair', cardName: 'Blow-Dry & Styling', price: 'From $50', duration: '45 min', image: './src/assets/images/blow-dry-styling.avif', desc: 'Round ceramic brush sculpt creating long-lasting voluminous bounce.' },
 
-    { id: 'h-brazilian-blowdry', name: 'Brazilian Blow-Dry Keratin', category: 'Hair', cardName: 'Hair Treatments', price: '$220', originalPrice: '$245', discountBadge: 'Save up to 10%', duration: '2 hr', image: './src/assets/images/Brazilian-Blow-Dry-Keratin.jpg', desc: 'Deep keratin alignment eliminating frizz and infusing liquid glass shine.' },
+    { id: 'h-brazilian-blowdry', name: 'Brazilian Blow-Dry Keratin', category: 'Hair', cardName: 'Hair Treatments', price: '$220', originalPrice: '$245', discountBadge: 'Save up to 10%', duration: '2 hr', image: './src/assets/images/Brazilian-Blow-Dry-Keratin.avif', desc: 'Deep keratin alignment eliminating frizz and infusing liquid glass shine.' },
 
-    { id: 'h-hair-botox', name: 'Restorative Hair Botox', category: 'Hair', cardName: 'Hair Treatments', price: 'From $160', duration: '1 hr 30 min', image: './src/assets/images/Restorative-Hair-Botox.jpg', desc: 'Intensive collagen and amino acid filler restoring damaged hair elasticity.' },
+    { id: 'h-hair-botox', name: 'Restorative Hair Botox', category: 'Hair', cardName: 'Hair Treatments', price: 'From $160', duration: '1 hr 30 min', image: './src/assets/images/Restorative-Hair-Botox.avif', desc: 'Intensive collagen and amino acid filler restoring damaged hair elasticity.' },
 
-    { id: 'c-full-head-balayage', name: 'French Dimensional Balayage', category: 'Color', cardName: 'Colour', price: '$240', originalPrice: '$265', discountBadge: 'Save up to 10%', duration: '3 hr', image: './src/assets/images/French-Dimensional-Balayage.jpg', desc: 'Freehand hand-painted sunlight ribbons with custom toner and bond sealant.' },
+    { id: 'c-full-head-balayage', name: 'French Dimensional Balayage', category: 'Color', cardName: 'Colour', price: '$240', originalPrice: '$265', discountBadge: 'Save up to 10%', duration: '3 hr', image: './src/assets/images/French-Dimensional-Balayage.avif', desc: 'Freehand hand-painted sunlight ribbons with custom toner and bond sealant.' },
 
-    { id: 'c-half-head-highlights', name: 'Half Head Dimensional Highlights', category: 'Color', cardName: 'Colour', price: 'From $110', duration: '1 hr 30 min', image: './src/assets/images/Half-Head-Dimensional-Highlights.jpg', desc: 'Multi-tonal fine baby-lights framing the crown and face.' },
+    { id: 'c-half-head-highlights', name: 'Half Head Dimensional Highlights', category: 'Color', cardName: 'Colour', price: 'From $110', duration: '1 hr 30 min', image: './src/assets/images/Half-Head-Dimensional-Highlights.avif', desc: 'Multi-tonal fine baby-lights framing the crown and face.' },
 
-    { id: 'c-roots', name: 'Single Process Root Refresh', category: 'Color', cardName: 'Roots', price: 'From $55', duration: '1 hr', image: './src/assets/images/Single-Process-Root-Refresh.jpg', desc: 'Precision color continuity and 100% gentle grey concealment.' },
+    { id: 'c-roots', name: 'Single Process Root Refresh', category: 'Color', cardName: 'Roots', price: 'From $55', duration: '1 hr', image: './src/assets/images/Single-Process-Root-Refresh.avif', desc: 'Precision color continuity and 100% gentle grey concealment.' },
 
-    { id: 'fs-deep-cleansing', name: 'Dermalogica Deep Cleansing Facial', category: 'Facials & Skins', cardName: 'Dermalogica Facials', price: 'From $75', duration: '1 hr', image: './src/assets/images/Dermalogica-Deep-Cleansing-Facial.jpg', desc: 'Botanical enzymatic exfoliation, gentle extraction, and barrier recovery masque.' },
+    { id: 'fs-deep-cleansing', name: 'Dermalogica Deep Cleansing Facial', category: 'Facials & Skins', cardName: 'Dermalogica Facials', price: 'From $75', duration: '1 hr', image: './src/assets/images/Dermalogica-Deep-Cleansing-Facial.avif', desc: 'Botanical enzymatic exfoliation, gentle extraction, and barrier recovery masque.' },
 
-    { id: 'fs-microdermabrasion', name: 'Crystal Clear Microdermabrasion', category: 'Facials & Skins', cardName: 'Crystal Clear Facials', price: 'From $70', duration: '45 min', image: './src/assets/images/Crystal-Clear-Microdermabrasion.jpg', desc: 'Diamond-tip resurfacing sweeping away dull dead cells for glass skin.' },
+    { id: 'fs-microdermabrasion', name: 'Crystal Clear Microdermabrasion', category: 'Facials & Skins', cardName: 'Crystal Clear Facials', price: 'From $70', duration: '45 min', image: './src/assets/images/Crystal-Clear-Microdermabrasion.avif', desc: 'Diamond-tip resurfacing sweeping away dull dead cells for glass skin.' },
 
-    { id: 'w-full-body', name: 'Complete Full Body Waxing', category: 'Waxing', cardName: 'Body Waxing', price: '$145', originalPrice: '$160', discountBadge: 'Save up to 10%', duration: '1 hr 45 min', image: './src/assets/images/intimate-waxing.jpg', desc: 'Gentle temperature-controlled azulene wax providing weeks of bare smoothness.' },
+    { id: 'w-full-body', name: 'Complete Full Body Waxing', category: 'Waxing', cardName: 'Body Waxing', price: '$145', originalPrice: '$160', discountBadge: 'Save up to 10%', duration: '1 hr 45 min', image: './src/assets/images/intimate-waxing.avif', desc: 'Gentle temperature-controlled azulene wax providing weeks of bare smoothness.' },
 
-    { id: 'ls-lash-lift', name: 'Keratin Lash Lift & Tint', category: 'Lashes', cardName: 'Lashes', price: 'From $55', duration: '45 min', image: './src/assets/images/lashes.jpg', desc: 'Upward lash curl enhancement with deep carbon-black tint for 8-week definition.' },
+    { id: 'ls-lash-lift', name: 'Keratin Lash Lift & Tint', category: 'Lashes', cardName: 'Lashes', price: 'From $55', duration: '45 min', image: './src/assets/images/lashes.avif', desc: 'Upward lash curl enhancement with deep carbon-black tint for 8-week definition.' },
   ];
 
   return (
@@ -178,3 +178,4 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
     </section>
   );
 };
+

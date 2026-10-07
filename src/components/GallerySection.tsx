@@ -180,3 +180,4 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
     </section>
   );
 };
+

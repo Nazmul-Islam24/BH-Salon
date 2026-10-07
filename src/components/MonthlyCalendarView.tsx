@@ -184,3 +184,4 @@ export const MonthlyCalendarView: React.FC<MonthlyCalendarViewProps> = ({
     </div>
   );
 };
+

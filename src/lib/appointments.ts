@@ -334,3 +334,4 @@ async function triggerEmailNotification(
     console.warn(`[LUMÉ Email] Edge function dispatch (${eventType}) note:`, err);
   }
 }
+

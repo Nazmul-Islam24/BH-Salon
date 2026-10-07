@@ -63,3 +63,4 @@ export const Introduction: React.FC<IntroductionProps> = ({ onDiscoverLume }) =>
     </section>
   );
 };
+

@@ -107,7 +107,7 @@ export const GiftCardsPage: React.FC<GiftCardsPageProps> = ({
         {/* Background stylish hair & beautiful women image (If removed, underlying bg color displays seamlessly) */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <img
-            src="./src/assets/images/cut-finish.jpg"
+            src="./src/assets/images/cut-finish.avif"
             alt="LUMÉ luxury hair artistry gift cards"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-40 mix-blend-multiply scale-105"
@@ -330,3 +330,4 @@ export const GiftCardsPage: React.FC<GiftCardsPageProps> = ({
     </div>
   );
 };
+

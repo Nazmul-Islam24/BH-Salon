@@ -44,3 +44,4 @@ export const GiftCardSection: React.FC<GiftCardSectionProps> = ({
     </section>
   );
 };
+

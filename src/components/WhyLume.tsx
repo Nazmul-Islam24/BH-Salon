@@ -58,3 +58,4 @@ export const WhyLume: React.FC = () => {
     </section>
   );
 };
+

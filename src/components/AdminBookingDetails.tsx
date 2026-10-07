@@ -312,3 +312,4 @@ export const AdminBookingDetails: React.FC<AdminBookingDetailsProps> = ({
     </div>
   );
 };
+

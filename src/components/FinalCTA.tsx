@@ -35,3 +35,4 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ onOpenBooking }) => {
     </section>
   );
 };
+
