@@ -1,3 +1,60 @@
+import homeHero from '../assets/images/2home-hero.avif';
+// import about from '../assets/images/about.avif';
+import after from '../assets/images/after.avif';
+import balayageHairDetail from '../assets/images/balayage_hair_detail.avif';
+import balayageHair from '../assets/images/balayage_hair.avif';
+import beforeAfter from '../assets/images/before-after.avif';
+import before from '../assets/images/before.avif';
+import blowDryStyling from '../assets/images/blow-dry-styling.avif';
+import bodyWaxing from '../assets/images/body-waxing.avif';
+import brazilianBlowDryKeratin from '../assets/images/Brazilian-Blow-Dry-Keratin.avif';
+import crystalClearFacials from '../assets/images/crystal-clear-facials.avif';
+import crystalClearMicrodermabrasion from '../assets/images/Crystal-Clear-Microdermabrasion.avif';
+import cutFinish from '../assets/images/cut-finish.avif';
+import dermalogicaDeepCleansingFacial from '../assets/images/Dermalogica-Deep-Cleansing-Facial.avif';
+import dermalogicaFacials from '../assets/images/dermalogica-facials.avif';
+import facialHairRemoval2 from '../assets/images/facial-hair-removal-2.avif';
+import facialHairRemoval3 from '../assets/images/facial-hair-removal-3.avif';
+import facialHairRemoval4 from '../assets/images/facial-hair-removal-4.avif';
+import facialHairRemoval5 from '../assets/images/facial-hair-removal-5.avif';
+import facialHairRemoval from '../assets/images/facial-hair-removal.avif';
+import frenchDimensionalBalayage from '../assets/images/French-Dimensional-Balayage.avif';
+import gallery from '../assets/images/gallery.avif';
+import gentsMassage from '../assets/images/gents-massage.avif';
+import gentsWaxing from '../assets/images/gents-waxing.avif';
+import gents from '../assets/images/gents.avif';
+import hairColour from '../assets/images/hair-colour.avif';
+import hairFoils from '../assets/images/hair-foils.avif';
+import hairRoots from '../assets/images/hair-roots.avif';
+import hairTreatments from '../assets/images/hair-treatments.avif';
+import halfHeadDimensionalHighlights from '../assets/images/Half-Head-Dimensional-Highlights.avif';
+import intimateWaxing from '../assets/images/intimate-waxing.avif';
+import laserHairRemoval from '../assets/images/laser-hair-removal.avif';
+import lashes from '../assets/images/lashes.avif';
+import lumeSalon from '../assets/images/Lume-Salon.avif';
+import makeUp from '../assets/images/make-up.avif';
+import massageBody from '../assets/images/massage-body.avif';
+import mehndi from '../assets/images/mehndi.avif';
+import microdermabrasion from '../assets/images/microdermabrasion.avif';
+import organicThreadingWaxing from '../assets/images/organic-threading-waxing.avif';
+import peelsEyeTreatments from '../assets/images/peels-eye-treatments.avif';
+import price from '../assets/images/price.avif';
+import restorativeHairBotox from '../assets/images/Restorative-Hair-Botox.avif';
+import ser1 from '../assets/images/ser1.avif';
+import singleProcessRootRefresh from '../assets/images/Single-Process-Root-Refresh.avif';
+import stylists1 from '../assets/images/stylists-1.avif';
+import stylists13 from '../assets/images/stylists-13.avif';
+import stylists14 from '../assets/images/stylists-14.avif';
+import stylists2 from '../assets/images/stylists-2.avif';
+import stylists3 from '../assets/images/stylists-3.avif';
+import stylists4 from '../assets/images/stylists-4.avif';
+import stylists5 from '../assets/images/stylists-5.avif';
+import stylists6 from '../assets/images/stylists-6.avif';
+import stylists7 from '../assets/images/stylists-7.avif';
+import stylists8 from '../assets/images/stylists-8.avif';
+import tintingLamination2 from '../assets/images/tinting-lamination2.avif';
+
+
 import {
   ServiceCard,
   SalonSection,
@@ -10,11 +67,11 @@ import {
   ServiceSubItem
 } from '../types';
 
-export const HERO_IMAGE = '/src/assets/images/2home-hero.avif';
-export const SALON_INTERIOR = '/src/assets/images/Lume-Salon.avif';
-export const STYLIST_DIRECTOR = '/src/assets/images/stylists-2.avif';
-export const BALAYAGE_DETAIL = '/src/assets/images/balayage_hair.avif';
-export const HAIR_TREATMENT_LOOK = '/src/assets/images/hair-treatments.avif';
+export const HERO_IMAGE = homeHero;
+export const SALON_INTERIOR = lumeSalon;
+export const STYLIST_DIRECTOR = stylists2;
+export const BALAYAGE_DETAIL = balayageHair;
+export const HAIR_TREATMENT_LOOK = hairTreatments;
 
 export const SALON_INFO = {
   name: 'LUMÉ Hair',
@@ -53,7 +110,7 @@ export const SALON_SECTIONS: SalonSection[] = [
         sectionName: 'THREADING & BROWS',
         name: 'Facial Hair Removal',
         shortDesc: 'Gentle, razor-free organic cotton hair removal for precision facial contouring.',
-        image: '/src/assets/images/facial-hair-removal.avif',
+        image: facialHairRemoval,
         whatItIs: 'An ancient, skin-friendly technique utilizing antibacterial organic twisted cotton thread to capture individual hairs from the root without tugging delicate skin layers.',
         whoItsFor: 'Ideal for sensitive skin, dermatological retinoid users, or anyone seeking clean, sharp definition and velvety smooth texture.',
         services: [
@@ -669,8 +726,8 @@ export const LOOKBOOK: LookbookItem[] = [
     category: 'THREADING & BROWS',
     cardId: 'facial-hair-removal',
     image: '/src/assets/images/facial-hair-removal.avif',
-    beforeImage: '/src/assets/images/before.avif',
-    afterImage: '/src/assets/images/after.avif',
+    beforeImage: before,
+    afterImage: after,
     serviceId: 'tb-eyebrows',
     stylistName: 'Zoe Chen',
     description: 'Precision organic cotton facial threading sculpting the natural brow arch and forehead line.',
