@@ -1,0 +1,6 @@
+{
+  "name": "LUMÉ Hair Studio",
+  "description": "Modern luxury female hair salon offering precision haircuts, bespoke balayage, dimensional hair color, and restorative treatments in an editorial sanctuary.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

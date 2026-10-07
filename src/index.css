@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-inter: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-lume-bg: #F7F3EE;
+  --color-lume-sand: #EDE5DC;
+  --color-lume-dark: #24201D;
+  --color-lume-muted: #756B63;
+  --color-lume-accent: #B98272;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+.font-inter, .price-number, .font-numeric {
+  font-family: var(--font-inter) !important;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+h1, h2, h3, h4, .font-editorial {
+  font-family: var(--font-serif);
+}
+
+h1, h2, h3 {
+  font-weight: 600 !important;
+}
+
+h4 {
+  font-weight: 600 !important;
+}
+
+/* Review marquee styling */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 42s linear infinite;
+}
+
+.animate-marquee:hover,
+.animate-marquee.is-paused {
+  animation-play-state: paused !important;
+}
+
+/* Hide scrollbars for lookbook / filter tabs */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+
+  /* Optimize receipt card for printing */
+  #lume-booking-receipt {
+    border: 1px solid #000000 !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    page-break-inside: avoid;
+  }
+
+  header, footer, button, .no-print {
+    display: none !important;
+  }
+}
