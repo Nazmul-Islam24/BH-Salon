@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { GiftCardCustomizer } from '../components/GiftCardCustomizer';
 import { SALON_INFO } from '../data/salonData';
+import cutFinish from '../assets/images/cut-finish.avif';
 
 interface GiftCardsPageProps {
   onOpenBooking: () => void;
@@ -107,7 +108,7 @@ export const GiftCardsPage: React.FC<GiftCardsPageProps> = ({
         {/* Background stylish hair & beautiful women image (If removed, underlying bg color displays seamlessly) */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <img
-            src="./src/assets/images/cut-finish.avif"
+            src={cutFinish}
             alt="LUMÉ luxury hair artistry gift cards"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-40 mix-blend-multiply scale-105"

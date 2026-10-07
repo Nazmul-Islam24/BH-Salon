@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ExternalLink, Calendar, Layers, ChevronDown, Check, LayoutGrid } from 'lucide-react';
 import { SALON_SECTIONS } from '../data/salonData';
 import { SalonSection, ServiceCard } from '../types';
+import ser1 from '../assets/images/ser1.avif';
 
 interface ServicesPageProps {
   onOpenBooking: (serviceId?: string) => void;
@@ -48,7 +49,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
         {/* Background stylish hair & beautiful women image (If removed or commented out, underlying bg color displays seamlessly) */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <img
-            src="./src/assets/images/ser1.avif"
+            src={ser1}
             alt="LUMÉ bespoke salon hair artistry"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-50 mix-blend-multiply scale-105"

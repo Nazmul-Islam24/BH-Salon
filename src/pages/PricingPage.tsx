@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { SALON_SECTIONS } from '../data/salonData';
 import { SalonSection, ServiceCard } from '../types';
 import { Info, Calendar, Clock, Layers, ChevronDown, Check, LayoutGrid } from 'lucide-react';
+import price from '../assets/images/price.avif';
+
 
 interface PricingPageProps {
   onOpenBooking: (serviceId?: string) => void;
@@ -62,7 +64,7 @@ export const PricingPage: React.FC<PricingPageProps> = ({
         {/* Background stylish hair & beautiful women image (If removed or commented out, underlying bg color displays seamlessly) */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <img
-            src="./src/assets/images/price.avif"
+            src={price}
             alt="LUMÉ transparent luxury pricing and artistry"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-35 mix-blend-multiply scale-105"

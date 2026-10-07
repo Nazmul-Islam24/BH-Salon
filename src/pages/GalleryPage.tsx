@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Eye, X, SlidersHorizontal, ChevronRight, ChevronLeft, Calendar, ArrowRight, Sparkles } from 'lucide-react';
 import { LOOKBOOK } from '../data/salonData';
 import { LookbookItem } from '../types';
+import gallery from '../assets/images/gallery.avif';
 
 interface GalleryPageProps {
   onOpenBooking: (serviceId?: string) => void;
@@ -47,7 +48,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ onOpenBooking }) => {
         {/* Background stylish hair & beautiful women image (If removed or commented out, underlying bg color displays seamlessly) */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <img
-            src="./src/assets/images/gallery.avif"
+            src={gallery}
             alt="LUMÉ visual portfolio and transformations"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-40 mix-blend-multiply scale-105"

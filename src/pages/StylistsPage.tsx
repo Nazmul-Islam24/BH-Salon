@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ArrowRight, Sparkles, X, Check } from 'lucide-react';
 import { STYLISTS } from '../data/salonData';
 import { Stylist } from '../types';
+import homeHero1 from '../assets/images/1home-hero.avif';
 
 interface StylistsPageProps {
   onOpenBooking: (serviceId?: string, stylistId?: string) => void;
@@ -31,7 +32,7 @@ export const StylistsPage: React.FC<StylistsPageProps> = ({
         {/* Background stylish hair & beautiful women image (If removed or commented out, underlying bg color displays seamlessly) */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <img
-            src="./src/assets/images/1home-hero.avif"
+            src={homeHero1}
             alt="LUMÉ master stylists and creative directors"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-50 mix-blend-multiply scale-105"

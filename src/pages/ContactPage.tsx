@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Navigation } from 'lucide-react';
 import { SALON_INFO, SALON_SECTIONS } from '../data/salonData';
+import lumeSalon from '../assets/images/Lume-Salon.avif';
 
 export const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -25,7 +26,7 @@ export const ContactPage: React.FC = () => {
         {/* Background stylish hair & beautiful women image (If removed or commented out, underlying bg color displays seamlessly) */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <img
-            src="./src/assets/images/Lume-Salon.avif"
+            src={lumeSalon}
             alt="LUMÉ concierge and studio appointments"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-40 mix-blend-multiply scale-105"

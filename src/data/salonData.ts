@@ -53,6 +53,7 @@ import stylists6 from '../assets/images/stylists-6.avif';
 import stylists7 from '../assets/images/stylists-7.avif';
 import stylists8 from '../assets/images/stylists-8.avif';
 import tintingLamination2 from '../assets/images/tinting-lamination2.avif';
+import homeHero1 from '../assets/images/1home-hero.avif';
 
 
 import {
@@ -836,9 +837,9 @@ export const LOOKBOOK: LookbookItem[] = [
     galleryImages: [
       BALAYAGE_DETAIL,
       HERO_IMAGE,
-      '/src/assets/images/1home-hero.avif',
-      '/src/assets/images/1home-hero.avif',
-      '/src/assets/images/1home-hero.avif',
+      homeHero1,
+      homeHero1,
+      homeHero1,
     ],
   },
   {
