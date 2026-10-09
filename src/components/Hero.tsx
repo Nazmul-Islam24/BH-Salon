@@ -16,7 +16,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreWork }) => {
           src={HERO_IMAGE}
           alt="LUMÉ Hair Studio model with radiant natural textured waves"
           referrerPolicy="no-referrer"
-          className="w-full h-full object-cover object-[70%_25%] sm:object-right-top transition-transform duration-1000 scale-[1.02]"
+          className="w-full h-full object-cover object-center sm:object-right-top transition-transform duration-1000 scale-[1.02]"
         />
         {/* Editorial Gradients & Scrim for perfect legibility */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#24201D]/90 via-[#24201D]/60 to-transparent sm:w-3/5" />

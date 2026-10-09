@@ -8,7 +8,7 @@ interface SignatureLookProps {
 
 export const SignatureLook: React.FC<SignatureLookProps> = ({ onExploreLookbook }) => {
   return (
-    <section className="relative min-h-[58vh] sm:min-h-[66vh] flex items-center justify-center overflow-hidden bg-[#24201D] text-[#F7F3EE]">
+    <section className="relative min-h-[58vh] sm:min-h-[66vh] flex items-center justify-center overflow-hidden bg-[#3f2a1b2c] text-[#F7F3EE]">
       {/* Huge Background Image with editorial overlay */}
       <div className="absolute inset-0 z-0">
         <img
