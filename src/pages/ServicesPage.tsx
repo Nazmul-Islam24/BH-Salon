@@ -299,10 +299,16 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({
                           <span className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-xs text-[#24201D] text-[10px] uppercase tracking-widest px-2 py-0.5 font-semibold border border-[#24201D]/10">
                             {card.services.length} Services
                           </span>
+                          <span className="absolute bottom-3 right-3 bg-[#24201D]/90 backdrop-blur-xs text-[#EDE5DC] text-[10px] uppercase tracking-widest px-2 py-0.5 font-semibold border border-white/10 group-hover:bg-[#B98272] group-hover:text-white transition-colors">
+                            {card.sectionName || sec.name}
+                          </span>
                         </div>
 
                         {/* Card Content Header */}
                         <div className="p-4 sm:p-5">
+                          <span className="text-[10px] uppercase tracking-[0.2em] text-[#B98272] font-semibold block mb-1">
+                            {card.sectionName || sec.name}
+                          </span>
                           <h3 className="font-serif text-xl sm:text-2xl text-[#24201D] mb-1 group-hover:text-[#B98272] transition-colors">
                             {card.name}
                           </h3>

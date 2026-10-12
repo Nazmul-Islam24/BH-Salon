@@ -305,6 +305,9 @@ export const PricingPage: React.FC<PricingPageProps> = ({
                         {/* Card Title & Description */}
                         <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3.5 border-b border-[#24201D]/15 gap-2.5">
                           <div>
+                            <span className="text-[10px] uppercase tracking-[0.2em] text-[#B98272] font-semibold block mb-0.5">
+                              {card.sectionName || sec.name}
+                            </span>
                             <div className="flex items-center space-x-2">
                               <h3 className="font-serif text-xl sm:text-2xl text-[#24201D]">
                                 {card.name}

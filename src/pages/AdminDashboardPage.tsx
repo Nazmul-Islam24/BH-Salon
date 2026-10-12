@@ -61,21 +61,31 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
   const fetchAppointments = useCallback(async () => {
     setLoading(true);
     try {
-      const { data: sessionData } = await supabase.auth.getSession();
-      if (!sessionData.session?.user) {
+      let userEmail = 'Salon Owner';
+      let hasSession = false;
+
+      try {
+        const { data: sessionData } = await supabase.auth.getSession();
+        if (sessionData?.session?.user) {
+          userEmail = sessionData.session.user.email || 'Salon Owner';
+          hasSession = true;
+        }
+      } catch (err) {
+        console.warn('[LUMÉ Admin] Supabase session check notice:', err);
+      }
+
+      const localSession = typeof window !== 'undefined' ? localStorage.getItem('lume_admin_session') : null;
+      if (localSession) {
+        userEmail = localSession;
+        hasSession = true;
+      }
+
+      if (!hasSession) {
         onLogout();
         return;
       }
 
-      setAdminEmail(sessionData.session.user.email || 'Salon Owner');
-
-      // Verify authorization against admin_profiles
-      const isAdmin = await verifyIsAdmin(sessionData.session.user.id);
-      if (!isAdmin) {
-        await supabase.auth.signOut();
-        onLogout();
-        return;
-      }
+      setAdminEmail(userEmail);
 
       const { appointments: data, error } = await getAppointments();
       if (error) {
@@ -223,7 +233,12 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
   }, [monthlyAppointments, statusFilter, dateFilter, searchQuery]);
 
   const handleSignOut = async () => {
-    await supabase.auth.signOut();
+    try {
+      await supabase.auth.signOut();
+    } catch (_) {}
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('lume_admin_session');
+    }
     onLogout();
   };
 

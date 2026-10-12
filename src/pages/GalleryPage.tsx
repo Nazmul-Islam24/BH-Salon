@@ -22,6 +22,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ onOpenBooking }) => {
     'HAIR',
     'COLOR',
     'FACIALS & SKINS',
+    'NAIL',
     'WAXING',
     'MASSAGE & BODY',
     'LASER',

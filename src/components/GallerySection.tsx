@@ -16,9 +16,9 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
 
   // Exactly 6 top essential, highly legible and regular salon transformations for Home page
   // const homeGalleryItems = LOOKBOOK.slice(0, 6);
-  const homeGalleryItems = LOOKBOOK.filter((item, index) =>
-    [6, 3, 7, 8, 9, 10, 12, 13, 14, 15].includes(index)
-  );
+  const homeGalleryItems = [6, 7, 17, 3, 18, 12, 8, 13, 9, 10, 14, 15].map(
+    (index) => LOOKBOOK[index]
+  ).filter(Boolean);
 
   return (
     <section className="py-14 sm:py-20 bg-[#F7F3EE]">

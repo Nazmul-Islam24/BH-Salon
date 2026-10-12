@@ -16,6 +16,8 @@ import dermalogicaDeepCleansingFacial from '../assets/images/Dermalogica-Deep-Cl
 import crystalClearMicrodermabrasion from '../assets/images/Crystal-Clear-Microdermabrasion.avif';
 import intimateWaxing from '../assets/images/intimate-waxing.avif';
 import lashes from '../assets/images/lashes.avif';
+import luxuryManicures from '../assets/images/manicure.avif';
+import luxuryPedicures from '../assets/images/pedicure.avif';
 
 
 
@@ -59,6 +61,12 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
     { id: 'fs-microdermabrasion', name: 'Crystal Clear Microdermabrasion', category: 'Facials & Skins', cardName: 'Crystal Clear Facials', price: 'From $70', duration: '45 min', image: crystalClearMicrodermabrasion, desc: 'Diamond-tip resurfacing sweeping away dull dead cells for glass skin.' },
 
     { id: 'w-full-body', name: 'Complete Full Body Waxing', category: 'Waxing', cardName: 'Body Waxing', price: '$145', originalPrice: '$160', discountBadge: 'Save up to 10%', duration: '1 hr 45 min', image: intimateWaxing, desc: 'Gentle temperature-controlled azulene wax providing weeks of bare smoothness.' },
+
+    { id: 'nm-russian-dry-manicure', name: 'Russian (Dry) Manicure', category: 'Nail', cardName: 'Manicures', price: 'From $55', duration: '50 min', image: luxuryManicures, desc: 'Waterless e-file precision cuticle detailing for flawless, long-lasting natural growth.' },
+
+    { id: 'nm-builder-gel-biab', name: 'Builder Gel (BIAB Overlay)', category: 'Nail', cardName: 'Manicures', price: 'From $70', duration: '1 hr', image: luxuryManicures, desc: 'Protective strengthening soft gel overlay promoting healthy natural nail length and repair.' },
+
+    { id: 'np-spa-deluxe-pedicure', name: 'Spa Deluxe Botanical Pedicure', category: 'Nail', cardName: 'Pedicures', price: '$75', originalPrice: '$85', discountBadge: 'Save up to 10%', duration: '1 hr 15 min', image: luxuryPedicures, desc: 'Rose-petal copper basin soak, botanical sea salt scrub, cooling mask, and hot towel wrap.' },
   ];
 
   return (

@@ -54,6 +54,8 @@ import stylists7 from '../assets/images/stylists-7.avif';
 import stylists8 from '../assets/images/stylists-8.avif';
 import tintingLamination2 from '../assets/images/tinting-lamination2.avif';
 import homeHero1 from '../assets/images/1home-hero.avif';
+import luxuryManicures from '../assets/images/manicure.avif';
+import luxuryPedicures from '../assets/images/pedicure.avif';
 
 
 import {
@@ -583,6 +585,70 @@ export const SALON_SECTIONS: SalonSection[] = [
       },
     ],
   },
+
+  // --------------------------------------------------------------------------
+  // 10: NAIL
+  // --------------------------------------------------------------------------
+  {
+    id: 'nail',
+    name: 'NAIL',
+    tagline: 'Precision Russian dry manicures, deluxe restorative pedicures, and bespoke high-gloss nail artistry',
+    cards: [
+      {
+        id: 'manicures',
+        sectionId: 'nail',
+        sectionName: 'NAIL',
+        name: 'Manicures',
+        shortDesc: 'Precision cuticle refinement, long-wearing BIAB soft gel overlays, and bespoke couture nail extensions.',
+        image: luxuryManicures,
+        whatItIs: 'An immaculate medical-grade dry e-file nail preparation followed by organic botanical scrubs, cuticle nourishing oils, and premium non-toxic gel or polish artistry.',
+        whoItsFor: 'Anyone desiring clean, healthy natural nail growth, chip-free mirror shine, or customized runway nail art.',
+        popular: true,
+        services: [
+          { id: 'nm-basic-manicure', name: 'Basic Manicure', duration: '30 min', price: 'From $35', priceNumber: 35, note: 'Nail shaping, light cuticle care, hand hydration, and regular polish or natural buff' },
+          { id: 'nm-buffed-manicure', name: 'Buffed Manicure', duration: '30 min', price: 'From $38', priceNumber: 38, note: 'High-shine natural buff finish with botanical cuticle nourishment' },
+          { id: 'nm-russian-dry-manicure', name: 'Russian (Dry) Manicure', duration: '50 min', price: 'From $55', priceNumber: 55, note: 'Waterless e-file precision cuticle detailing for flawless, long-lasting growth' },
+          { id: 'nm-gel-manicure', name: 'Gel Manicure', duration: '45 min', price: 'From $48', priceNumber: 48, note: 'High-gloss LED-cured gel polish with 2-3 weeks chip-resistant wear' },
+          { id: 'nm-shellac-manicure', name: 'Shellac Manicure', duration: '45 min', price: 'From $50', priceNumber: 50, note: 'Power polish blend combining high shine with zero nail bed damage' },
+          { id: 'nm-dip-powder-sns', name: 'Dip Powder (SNS) Manicure', duration: '1 hr', price: 'From $60', priceNumber: 60, note: 'Vitamin and calcium-infused powder for durable, odor-free strength' },
+          { id: 'nm-builder-gel-biab', name: 'Builder Gel (BIAB / Soft Gel)', duration: '1 hr', price: 'From $70', priceNumber: 70, note: 'Protective strengthening overlay promoting natural nail growth and repair' },
+          { id: 'nm-gel-x-extensions', name: 'Gel-X Extensions', duration: '1 hr 15 min', price: 'From $85', priceNumber: 85, note: 'Full-cover soft gel tips offering lightweight, zero-damage natural extensions' },
+          { id: 'nm-acrylic-manicure', name: 'Acrylic Manicure', duration: '1 hr 15 min', price: 'From $75', priceNumber: 75, note: 'Sculpted full acrylic set customized with shape, length, and durability' },
+          { id: 'nm-polygel', name: 'Polygel', duration: '1 hr 15 min', price: 'From $80', priceNumber: 80, note: 'Hybrid gel-acrylic system providing featherlight flexibility and strength' },
+          { id: 'nm-press-on-manicure', name: 'Press-on Manicure', duration: '35 min', price: 'From $40', priceNumber: 40, note: 'Salon-applied custom reusable luxury press-on set with adhesive bonding' },
+          { id: 'nm-french-manicure', name: 'French Manicure', duration: '50 min', price: 'From $52', priceNumber: 52, note: 'Timeless crisp white or micro-French tip contouring with translucent base' },
+          { id: 'nm-american-manicure', name: 'American Manicure', duration: '50 min', price: 'From $52', priceNumber: 52, note: 'Soft, creamy off-white tips with warm natural nude nail bed blending' },
+          { id: 'nm-reverse-french-manicure', name: 'Reverse French (Half-Moon) Manicure', duration: '55 min', price: 'From $58', priceNumber: 58, note: 'Retro chic accent crescent framing the cuticle lunula in contrasting tones' },
+          { id: 'nm-nail-art', name: 'Nail Art', duration: '30 min', price: 'From $30', priceNumber: 30, note: 'Bespoke hand-painted motifs, chrome glazed finish, foil, or minimalist lines' },
+          { id: 'nm-hot-stone-manicure', name: 'Hot Stone Manicure', duration: '1 hr', price: 'From $65', priceNumber: 65, note: 'Heated basalt stones with organic warm oil acupressure hand massage' },
+          { id: 'nm-paraffin-manicure', name: 'Paraffin Manicure', duration: '45 min', price: 'From $55', priceNumber: 55, note: 'Warm peach paraffin thermal dip locking in deep hydration for dry hands' },
+        ],
+      },
+      {
+        id: 'pedicures',
+        sectionId: 'nail',
+        sectionName: 'NAIL',
+        name: 'Pedicures',
+        shortDesc: 'Aromatherapy foot basins, exfoliating scrubs, medical dry heel care, and soothing hot stone wraps.',
+        image: luxuryPedicures,
+        whatItIs: 'A restorative sanctuary ritual combining heated copper foot soaks, gentle callus reduction, organic scrubs, and flawless polish.',
+        whoItsFor: 'Tired feet, runners, athletes, or anyone seeking velvety heel softening and immaculate toe aesthetic.',
+        popular: true,
+        services: [
+          { id: 'np-classic-pedicure', name: 'Classic / Regular Pedicure', duration: '45 min', price: 'From $48', priceNumber: 48, note: 'Aromatherapy soak, cuticle trimming, gentle buff, and high-shine polish' },
+          { id: 'np-gel-pedicure', name: 'Gel Pedicure', duration: '1 hr', price: 'From $60', priceNumber: 60, note: 'Instant-dry chip-resistant LED gel polish holding mirror shine for 4+ weeks' },
+          { id: 'np-french-pedicure', name: 'French Pedicure', duration: '55 min', price: 'From $58', priceNumber: 58, note: 'Clean classic white tip precision detailing with sheer nude gloss' },
+          { id: 'np-spa-deluxe-pedicure', name: 'Spa / Deluxe Pedicure', duration: '1 hr 15 min', price: '$75', priceNumber: 75, originalPrice: '$85', discountBadge: 'Save up to 10%', note: 'Rose-petal copper soak, sea salt scrub, clay cooling masque, and hot towel wrap' },
+          { id: 'np-paraffin-wax-pedicure', name: 'Paraffin Wax Pedicure', duration: '1 hr', price: 'From $70', priceNumber: 70, note: 'Thermal paraffin bath deeply softening dry cracked heels and rough skin' },
+          { id: 'np-hot-stone-pedicure', name: 'Hot Stone Pedicure', duration: '1 hr 15 min', price: 'From $80', priceNumber: 80, note: 'Warm river stones alleviating calf and foot tension with circulation boost' },
+          { id: 'np-mini-express-pedicure', name: 'Mini / Express Pedicure', duration: '30 min', price: 'From $35', priceNumber: 35, note: 'Quick maintenance including nail shaping, buffing, and fresh polish coat' },
+          { id: 'np-russian-dry-pedicure', name: 'Russian (Dry) Pedicure', duration: '1 hr', price: 'From $75', priceNumber: 75, note: 'Waterless precision e-file podiatry technique for spotless cuticle and heel work' },
+          { id: 'np-athletic-sports-pedicure', name: 'Athletic / Sports Pedicure', duration: '1 hr', price: 'From $68', priceNumber: 68, note: 'Targeted deep-tissue foot relief, arnica oil massage, and intensive callus smoothing' },
+          { id: 'np-medical-clinical-pedicure', name: 'Medical / Clinical Pedicure', duration: '1 hr 15 min', price: 'From $90', priceNumber: 90, note: 'Strict hygienic protocol for ingrown prevention, thickened nails, and deep heel fissures' },
+        ],
+      },
+    ],
+  },
 ];
 
 // Helper: Flatten all sub-services for easy search, selection, and multi-booking
@@ -1003,6 +1069,38 @@ export const LOOKBOOK: LookbookItem[] = [
       mehndi,
       mehndi,
       mehndi,
+    ],
+  },
+  {
+    id: 'gallery-manicures',
+    title: 'Manicures & BIAB Artistry',
+    category: 'NAIL',
+    cardId: 'manicures',
+    image: luxuryManicures,
+    serviceId: 'nm-russian-dry-manicure',
+    stylistName: 'Chloe Bennett',
+    description: 'Precision Russian dry cuticle detailing, BIAB strengthening soft gel, and minimalist French tip contours.',
+    galleryImages: [
+      luxuryManicures,
+      luxuryManicures,
+      luxuryManicures,
+      luxuryManicures,
+    ],
+  },
+  {
+    id: 'gallery-pedicures',
+    title: 'Deluxe Spa Pedicures',
+    category: 'NAIL',
+    cardId: 'pedicures',
+    image: luxuryPedicures,
+    serviceId: 'np-spa-deluxe-pedicure',
+    stylistName: 'Chloe Bennett',
+    description: 'Aromatherapy warm copper basin soak, restorative hot towel wrap, and mirror-shine gel pedicure finish.',
+    galleryImages: [
+      luxuryPedicures,
+      luxuryPedicures,
+      luxuryPedicures,
+      luxuryPedicures,
     ],
   },
 ];

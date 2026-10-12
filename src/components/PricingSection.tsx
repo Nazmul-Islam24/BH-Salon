@@ -26,6 +26,8 @@ export const PricingSection: React.FC<PricingSectionProps> = ({
     { name: 'Crystal Clear Microdermabrasion & Oxygen', price: '$120', originalPrice: '$135', badge: 'Save up to 10%', note: '1 hr 15 min · Diamond crystal peel with pressurized oxygen plumping' },
     { name: 'Full Body Gentle Waxing', price: '$145', originalPrice: '$160', badge: 'Save up to 10%', note: '1 hr 45 min · Azulene temperature-controlled strip waxing' },
     { name: 'Keratin Lash & Brow Lift Duo', price: '$95', originalPrice: '$105', badge: 'Save up to 10%', note: '1 hr 15 min · Semi-permanent upward lift with carbon-black tint' },
+    { name: 'Russian (Dry) Manicure', price: 'From $55', note: '50 min · Waterless e-file precision cuticle detailing & buff' },
+    { name: 'Spa / Deluxe Pedicure', price: '$75', originalPrice: '$85', badge: 'Save up to 10%', note: '1 hr 15 min · Copper basin soak, botanical scrub, and hot towel wrap' },
   ];
 
   return (
