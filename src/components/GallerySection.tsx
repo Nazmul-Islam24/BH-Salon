@@ -15,7 +15,10 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
   const [selectedLook, setSelectedLook] = useState<LookbookItem | null>(null);
 
   // Exactly 6 top essential, highly legible and regular salon transformations for Home page
-  const homeGalleryItems = LOOKBOOK.slice(0, 6);
+  // const homeGalleryItems = LOOKBOOK.slice(0, 6);
+  const homeGalleryItems = LOOKBOOK.filter((item, index) =>
+    [6, 3, 7, 8, 9, 10, 12, 14].includes(index)
+  );
 
   return (
     <section className="py-14 sm:py-20 bg-[#F7F3EE]">
