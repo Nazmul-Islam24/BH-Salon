@@ -18,7 +18,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   const socialPlatforms = [
     {
       name: 'Instagram',
-      url: 'https://instagram.com/lumehairstudio',
+      url: 'https://instagram.com/beautyhairstudio',
       icon: (
         <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
           <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
@@ -96,7 +96,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
     },
     {
       name: 'YouTube',
-      url: 'https://youtube.com/@lumehairstudio',
+      url: 'https://youtube.com/@beautyhairstudio',
       icon: (
         <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
           <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
@@ -114,7 +114,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             onClick={() => handleLink('home')}
             className="font-serif text-3xl sm:text-4xl tracking-[0.25em] text-[#F7F3EE] hover:opacity-80 transition-opacity cursor-pointer"
           >
-            LUMÉ
+            BEAUTY
           </button>
 
           {/* Navigation Links in UPPERCASE */}
@@ -166,7 +166,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           {/* Social & Directory Platform Icons (Instagram, Facebook, TikTok, Twitter, Pinterest, LinkedIn, Fresha, Yelp) */}
           <div className="pt-2">
             <span className="text-[10px] uppercase tracking-[0.25em] text-[#EDE5DC]/50 block mb-3 font-medium">
-              CONNECT & FOLLOW THE LUMÉ LOOK
+              CONNECT & FOLLOW THE BEAUTY LOOK
             </span>
             <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
               {socialPlatforms.map((platform) => (
@@ -197,7 +197,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           {/* Copyright & Legal */}
           <div className="pt-6 border-t border-[#EDE5DC]/10 w-full flex flex-col sm:flex-row items-center justify-between text-[11px] text-[#EDE5DC]/50 gap-4">
-            <p>© 2026 LUMÉ Hair Studio. All rights reserved.</p>
+            <p>© 2026 BEAUTY Hair Studio. All rights reserved.</p>
             <div className="flex items-center space-x-6">
               <button
                 onClick={() => setLegalModal('privacy')}
@@ -238,7 +238,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </h3>
             <p className="text-xs text-[#756B63] leading-relaxed font-light mb-4">
               {legalModal === 'privacy'
-                ? 'LUMÉ Hair Studio respects your personal confidentiality. Client records, appointment preferences, and color formulas remain strictly private and are never shared or sold to external third parties.'
+                ? 'BEAUTY Hair Studio respects your personal confidentiality. Client records, appointment preferences, and color formulas remain strictly private and are never shared or sold to external third parties.'
                 : 'Appointments require a 48-hour cancellation policy to accommodate other clients on our waitlist. Custom chemical and extension services require a prior patch test and consultation.'}
             </p>
             <div className="text-right">

@@ -66,7 +66,7 @@ export async function sendBookingReceivedEmails(
   const servicesList = formatServices(appointment.selected_services);
 
   // 1. Customer Confirmation Email
-  const customerSubject = `Reservation Request Received — LUMÉ Hair Studio (Ref: ${appointment.booking_reference})`;
+  const customerSubject = `Reservation Request Received — BEAUTY Hair Studio (Ref: ${appointment.booking_reference})`;
   const customerHtml = `
     <div style="background-color: #ECE7E1; padding: 40px 15px; font-family: 'Georgia', serif;">
       <div style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF; border: 1px solid #D4AF37; box-shadow: 0 4px 20px rgba(0,0,0,0.06); padding: 40px 32px;">
@@ -91,7 +91,7 @@ export async function sendBookingReceivedEmails(
           Dear <strong>${appointment.customer_name}</strong>,
         </p>
         <p style="font-size: 14px; line-height: 1.6; color: #50463E; margin-bottom: 24px;">
-          Thank you for choosing LUMÉ Hair Studio. Your reservation request has been received by our salon concierge. We are reviewing schedule availability and will send your final confirmation shortly.
+          Thank you for choosing BEAUTY Hair Studio. Your reservation request has been received by our salon concierge. We are reviewing schedule availability and will send your final confirmation shortly.
         </p>
 
         <div style="background-color: #FAF8F5; border: 1px solid #EBE4DC; padding: 24px; margin-bottom: 28px;">
@@ -130,9 +130,9 @@ export async function sendBookingReceivedEmails(
         </div>
 
         <div style="border-top: 1px solid #EDE5DC; padding-top: 24px; text-align: center; font-size: 12px; color: #756B63; font-family: sans-serif;">
-          <p style="margin: 0 0 4px 0; font-weight: 600; color: #24201D;">LUMÉ Hair Studio · Manhattan Flagship</p>
+          <p style="margin: 0 0 4px 0; font-weight: 600; color: #24201D;">BEAUTY Hair Studio · Manhattan Flagship</p>
           <p style="margin: 0 0 8px 0;">123 Mercer Street, SoHo, New York, NY 10012</p>
-          <p style="margin: 0; font-size: 11px; color: #A09489;">Direct Line: (555) 123-4567 · concierge@lumehairstudio.com</p>
+          <p style="margin: 0; font-size: 11px; color: #A09489;">Direct Line: (555) 123-4567 · concierge@beautyhairstudio.com</p>
         </div>
       </div>
     </div>
@@ -206,7 +206,7 @@ export async function sendBookingReceivedEmails(
 
         <div style="border-top: 1px solid #EDE5DC; padding-top: 20px; text-align: center; font-size: 12px; color: #756B63; font-family: sans-serif;">
           <p style="margin: 0 0 4px 0;">Log in to your <strong>Studio Reservations Desk</strong> to confirm or reschedule.</p>
-          <p style="margin: 0; color: #A09489;">LUMÉ Hair Studio · Automated Concierge System</p>
+          <p style="margin: 0; color: #A09489;">BEAUTY Hair Studio · Automated Concierge System</p>
         </div>
       </div>
     </div>
@@ -233,7 +233,7 @@ export async function sendBookingConfirmedEmail(
   overrideApiKey?: string
 ): Promise<SendEmailResult> {
   const servicesList = formatServices(appointment.selected_services);
-  const subject = `Your Reservation is Confirmed — LUMÉ Hair Studio (Ref: ${appointment.booking_reference})`;
+  const subject = `Your Reservation is Confirmed — BEAUTY Hair Studio (Ref: ${appointment.booking_reference})`;
   const html = `
     <div style="background-color: #ECE7E1; padding: 40px 15px; font-family: 'Georgia', serif;">
       <div style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF; border: 1px solid #D4AF37; box-shadow: 0 4px 20px rgba(0,0,0,0.06); padding: 40px 32px;">
@@ -258,7 +258,7 @@ export async function sendBookingConfirmedEmail(
           Dear <strong>${appointment.customer_name}</strong>,
         </p>
         <p style="font-size: 14px; line-height: 1.6; color: #50463E; margin-bottom: 24px;">
-          We are delighted to confirm that your upcoming appointment at LUMÉ Hair Studio has been officially approved and reserved on our calendar.
+          We are delighted to confirm that your upcoming appointment at BEAUTY Hair Studio has been officially approved and reserved on our calendar.
         </p>
 
         <div style="background-color: #FAF8F5; border: 1px solid #EBE4DC; padding: 24px; margin-bottom: 28px;">
@@ -305,9 +305,9 @@ export async function sendBookingConfirmedEmail(
         </div>
 
         <div style="border-top: 1px solid #EDE5DC; padding-top: 24px; text-align: center; font-size: 12px; color: #756B63; font-family: sans-serif;">
-          <p style="margin: 0 0 4px 0; font-weight: 600; color: #24201D;">LUMÉ Hair Studio · Manhattan Flagship</p>
+          <p style="margin: 0 0 4px 0; font-weight: 600; color: #24201D;">BEAUTY Hair Studio · Manhattan Flagship</p>
           <p style="margin: 0 0 8px 0;">123 Mercer Street, SoHo, New York, NY 10012</p>
-          <p style="margin: 0; font-size: 11px; color: #A09489;">Direct Line: (555) 123-4567 · concierge@lumehairstudio.com</p>
+          <p style="margin: 0; font-size: 11px; color: #A09489;">Direct Line: (555) 123-4567 · concierge@beautyhairstudio.com</p>
         </div>
       </div>
     </div>
@@ -328,7 +328,7 @@ export async function sendTestResendEmail(
   toEmail: string,
   apiKey?: string
 ): Promise<SendEmailResult> {
-  const subject = `VIP Appointment Confirmation Preview — LUMÉ Hair Studio (Ref: LUME-VIP-901)`;
+  const subject = `VIP Appointment Confirmation Preview — BEAUTY Hair Studio (Ref: BEAUTY-VIP-901)`;
   const html = `
     <div style="background-color: #ECE7E1; padding: 40px 15px; font-family: 'Georgia', serif;">
       <div style="max-width: 600px; margin: 0 auto; background-color: #FFFFFF; border: 1px solid #D4AF37; box-shadow: 0 4px 20px rgba(0,0,0,0.06); padding: 40px 32px;">
@@ -359,14 +359,14 @@ export async function sendTestResendEmail(
           Dear <strong>Salon Owner / Valued Client</strong>,
         </p>
         <p style="font-size: 14px; line-height: 1.6; color: #50463E; margin-bottom: 24px;">
-          This is the actual luxury appointment confirmation letter your clients receive when their booking is confirmed at LUMÉ Hair Studio.
+          This is the actual luxury appointment confirmation letter your clients receive when their booking is confirmed at BEAUTY Hair Studio.
         </p>
 
         <!-- Appointment Card with Gold Borders -->
         <div style="background-color: #FAF8F5; border: 1px solid #EBE4DC; padding: 24px; margin-bottom: 28px;">
           <div style="text-align: right; margin-bottom: 16px;">
             <span style="background: #24201D; color: #D4AF37; font-family: monospace; font-size: 11px; padding: 4px 10px; font-weight: bold; letter-spacing: 0.1em;">
-              REF: LUME-2026-VIP-901
+              REF: Beauty-2026-VIP-901
             </span>
           </div>
 
@@ -410,9 +410,9 @@ export async function sendTestResendEmail(
 
         <!-- Footer -->
         <div style="border-top: 1px solid #EDE5DC; padding-top: 24px; text-align: center; font-size: 12px; color: #756B63; font-family: sans-serif;">
-          <p style="margin: 0 0 4px 0; font-weight: 600; color: #24201D;">LUMÉ Hair Studio · Manhattan Flagship</p>
+          <p style="margin: 0 0 4px 0; font-weight: 600; color: #24201D;">BEAUTY Hair Studio · Manhattan Flagship</p>
           <p style="margin: 0 0 8px 0;">123 Mercer Street, SoHo, New York, NY 10012</p>
-          <p style="margin: 0; font-size: 11px; color: #A09489;">Direct Line: (555) 123-4567 · concierge@lumehairstudio.com</p>
+          <p style="margin: 0; font-size: 11px; color: #A09489;">Direct Line: (555) 123-4567 · concierge@beautyhairstudio.com</p>
         </div>
 
       </div>

@@ -68,7 +68,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <img
             src={about}
-            alt="LUMÉ bespoke editorial female hair aesthetic"
+            alt="BEAUTY bespoke editorial female hair aesthetic"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-40 mix-blend-multiply scale-105"
           />
@@ -77,7 +77,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <span className="text-xs uppercase tracking-[0.25em] text-[#B98272] font-semibold block mb-1">
-            ABOUT LUMÉ HAIR STUDIO
+            ABOUT BEAUTY HAIR STUDIO
           </span>
           <h1 className="font-serif font-normal text-3xl sm:text-5xl lg:text-6xl text-[#24201D] tracking-tight mb-3">
             NOT JUST A SALON.<br />
@@ -100,7 +100,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
               Our Story
             </h2>
             <p className="text-sm text-[#756B63] leading-relaxed font-light">
-              LUMÉ was conceived out of fatigue with the rushed, loud factory-style salons that dominate major cities. Our founder and creative directors envisioned a quiet haven where female hair artistry could be practiced with the same exacting precision as haute couture.
+              BEAUTY was conceived out of fatigue with the rushed, loud factory-style salons that dominate major cities. Our founder and creative directors envisioned a quiet haven where female hair artistry could be practiced with the same exacting precision as haute couture.
             </p>
             <p className="text-sm text-[#756B63] leading-relaxed font-light">
               We selected historic Mercer Street for its high ceilings, natural northern daylight, and peaceful cobblestone setting. Here, clients don’t simply receive a service—they step out of the daily rush and recharge.
@@ -111,7 +111,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
             <div className="aspect-4/3 overflow-hidden shadow-sm bg-[#EDE5DC]">
               <img
                 src={SALON_INTERIOR}
-                alt="LUMÉ Interior Story"
+                alt="BEAUTY Interior Story"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
               />
@@ -159,7 +159,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
               Our Space
             </h2>
             <p className="text-sm text-[#756B63] leading-relaxed font-light">
-              Crafted from raw travertine stone, limewash plaster, warm brushed brass, and natural linen textiles, LUMÉ was intentionally designed as an architectural sensory pause.
+              Crafted from raw travertine stone, limewash plaster, warm brushed brass, and natural linen textiles, BEAUTY was intentionally designed as an architectural sensory pause.
             </p>
             <p className="text-sm text-[#756B63] leading-relaxed font-light">
               Acoustic baffles absorb dryer hum, soft ambient lighting prevents glare, and personalized workstation nooks give you complete personal privacy throughout your transformation.
@@ -285,7 +285,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking }) => {
                 FROM THE JOURNAL
               </span>
               <h2 className="font-serif font-normal text-3xl sm:text-5xl text-[#24201D] tracking-tight">
-                THE LUMÉ JOURNAL
+                THE BEAUTY JOURNAL
               </h2>
             </div>
             <p className="text-xs text-[#756B63] mt-1 sm:mt-0 font-light">

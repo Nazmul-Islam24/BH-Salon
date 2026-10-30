@@ -3,7 +3,7 @@ import { Appointment, BookingServiceSnapshot, BookingStatus } from '../types';
 import { sendBookingReceivedEmails, sendBookingConfirmedEmail } from './emailService';
 
 /**
- * Generate a human-friendly unique booking reference e.g., LUME-20261005-AB74
+ * Generate a human-friendly unique booking reference e.g., BEAUTY-20261005-AB74
  */
 export function generateBookingReference(dateStr?: string): string {
   const cleanDate = (dateStr || new Date().toISOString().split('T')[0]).replace(/-/g, '');
@@ -35,8 +35,8 @@ export interface CreateAppointmentResult {
   error?: string;
 }
 
-const LOCAL_STORAGE_KEY = 'lume_salon_appointments';
-const LOCAL_ADMINS_KEY = 'lume_salon_admins';
+const LOCAL_STORAGE_KEY = 'Beauty_salon_appointments';
+const LOCAL_ADMINS_KEY = 'Beauty_salon_admins';
 
 export function getLocalAppointments(): Appointment[] {
   try {
@@ -124,21 +124,21 @@ export async function createAppointment(
     try {
       const { error } = await supabase.from('appointments').insert([recordToInsert]);
       if (error) {
-        console.warn('[LUMÉ Appointments] Supabase remote notice (using local storage cache):', error.message);
+        console.warn('[BEAUTY Appointments] Supabase remote notice (using local storage cache):', error.message);
       }
     } catch (dbErr) {
-      console.warn('[LUMÉ Appointments] Supabase connection unreachable (using local storage cache):', dbErr);
+      console.warn('[BEAUTY Appointments] Supabase connection unreachable (using local storage cache):', dbErr);
     }
 
     // Asynchronously dispatch transactional emails via /api/send-email (Resend / SMTP)
     sendBookingReceivedEmails(createdAppointment).catch((err) => {
-      console.warn('[LUMÉ Email] Direct dispatch caught:', err);
+      console.warn('[BEAUTY Email] Direct dispatch caught:', err);
     });
 
     // Also trigger Edge Function if configured
     if (appointmentId) {
       triggerEmailNotification(appointmentId, 'booking_received').catch((err) => {
-        console.warn('[LUMÉ Appointments] Edge function trigger caught:', err);
+        console.warn('[BEAUTY Appointments] Edge function trigger caught:', err);
       });
     }
 
@@ -148,7 +148,7 @@ export async function createAppointment(
       appointment: createdAppointment,
     };
   } catch (err: unknown) {
-    console.error('[LUMÉ Appointments] Unexpected error creating appointment:', err);
+    console.error('[BEAUTY Appointments] Unexpected error creating appointment:', err);
     const msg = err instanceof Error ? err.message : 'Network error or service unavailable.';
     return {
       success: false,
@@ -192,7 +192,7 @@ export async function getAppointments(filters?: {
       appointmentsList = data as Appointment[];
     }
   } catch (err: unknown) {
-    console.warn('[LUMÉ Admin] Supabase query notice (using local cache):', err);
+    console.warn('[BEAUTY Admin] Supabase query notice (using local cache):', err);
   }
 
   // Merge with locally stored appointments to ensure zero booking loss
@@ -265,7 +265,7 @@ export async function updateAppointmentStatus(
         })
         .eq('id', appointmentId);
     } catch (dbErr) {
-      console.warn('[LUMÉ Admin] Remote Supabase update warning:', dbErr);
+      console.warn('[BEAUTY Admin] Remote Supabase update warning:', dbErr);
     }
 
     // Trigger transactional email for confirmation or cancellation
@@ -273,16 +273,16 @@ export async function updateAppointmentStatus(
       const target = getLocalAppointments().find((a) => a.id === appointmentId);
       if (target) {
         sendBookingConfirmedEmail(target).catch((err) =>
-          console.warn('[LUMÉ Email] Direct confirmation email notice:', err)
+          console.warn('[BEAUTY Email] Direct confirmation email notice:', err)
         );
       }
 
       triggerEmailNotification(appointmentId, 'booking_confirmed').catch((err) =>
-        console.warn('[LUMÉ Email] Confirmation email trigger caught:', err)
+        console.warn('[BEAUTY Email] Confirmation email trigger caught:', err)
       );
     } else if (newStatus === 'cancelled') {
       triggerEmailNotification(appointmentId, 'booking_cancelled').catch((err) =>
-        console.warn('[LUMÉ Email] Cancellation email trigger caught:', err)
+        console.warn('[BEAUTY Email] Cancellation email trigger caught:', err)
       );
     }
 
@@ -317,7 +317,7 @@ export function saveLocalAdmin(email: string) {
  * Verifies if an authenticated user's ID exists in the admin_profiles table.
  */
 export async function verifyIsAdmin(userId: string): Promise<boolean> {
-  if (typeof window !== 'undefined' && localStorage.getItem('lume_admin_session')) {
+  if (typeof window !== 'undefined' && localStorage.getItem('Beauty_admin_session')) {
     return true;
   }
   try {
@@ -384,7 +384,7 @@ export async function registerFirstAdmin(
           });
       }
     } catch (e) {
-      console.warn('[LUMÉ Auth] Supabase remote notice (persisted in local admin store):', e);
+      console.warn('[BEAUTY Auth] Supabase remote notice (persisted in local admin store):', e);
     }
 
     return { success: true };
@@ -409,7 +409,7 @@ async function triggerEmailNotification(
       body: { appointmentId, eventType },
     });
   } catch (err) {
-    console.warn(`[LUMÉ Email] Edge function dispatch (${eventType}) note:`, err);
+    console.warn(`[BEAUTY Email] Edge function dispatch (${eventType}) note:`, err);
   }
 }
 

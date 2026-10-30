@@ -55,7 +55,7 @@ export default async function handler(req: any, res: any) {
         },
       });
 
-      const fromEmail = from || `LUMÉ Hair Studio <${smtpUser.trim()}>`;
+      const fromEmail = from || `BEAUTY Hair Studio <${smtpUser.trim()}>`;
       const plainText = (body as any).text || html.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
 
       const info = await transporter.sendMail({
@@ -66,7 +66,7 @@ export default async function handler(req: any, res: any) {
         text: plainText,
         html,
         headers: {
-          'X-Mailer': 'LUME-Salon-Engine',
+          'X-Mailer': 'BEAUTY-Salon-Engine',
           'X-Priority': '3',
         },
       });
@@ -86,7 +86,7 @@ export default async function handler(req: any, res: any) {
         from ||
         process.env.RESEND_FROM_EMAIL ||
         process.env.VITE_RESEND_FROM_EMAIL ||
-        'LUMÉ Hair Studio <onboarding@resend.dev>';
+        'BEAUTY Hair Studio <onboarding@resend.dev>';
 
       const response = await fetch('https://api.resend.com/emails', {
         method: 'POST',

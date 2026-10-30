@@ -42,7 +42,7 @@ export const AdminLoginPage: React.FC<AdminLoginPageProps> = ({
       if (!error && data?.user) {
         const isAdmin = await verifyIsAdmin(data.user.id);
         if (isAdmin) {
-          localStorage.setItem('lume_admin_session', normalizedEmail);
+          localStorage.setItem('Beauty_admin_session', normalizedEmail);
           onLoginSuccess();
           return;
         }
@@ -51,7 +51,7 @@ export const AdminLoginPage: React.FC<AdminLoginPageProps> = ({
       // Check local authorized admin list fallback
       const localAdmins = getLocalAdmins();
       if (localAdmins.includes(normalizedEmail) || normalizedEmail === 'nzlpatwary901@gmail.com') {
-        localStorage.setItem('lume_admin_session', normalizedEmail);
+        localStorage.setItem('Beauty_admin_session', normalizedEmail);
         onLoginSuccess();
         return;
       }
@@ -61,7 +61,7 @@ export const AdminLoginPage: React.FC<AdminLoginPageProps> = ({
       // Local fallback on network or configuration errors
       const localAdmins = getLocalAdmins();
       if (localAdmins.includes(normalizedEmail) || normalizedEmail === 'nzlpatwary901@gmail.com') {
-        localStorage.setItem('lume_admin_session', normalizedEmail);
+        localStorage.setItem('Beauty_admin_session', normalizedEmail);
         onLoginSuccess();
         return;
       }
@@ -82,14 +82,14 @@ export const AdminLoginPage: React.FC<AdminLoginPageProps> = ({
           className="inline-flex items-center space-x-1.5 text-xs uppercase tracking-wider font-semibold text-[#756B63] hover:text-[#24201D] mb-6 transition-colors cursor-pointer"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
-          <span>Return to LUMÉ Studio</span>
+          <span>Return to BEAUTY Studio</span>
         </button>
 
         {/* Card */}
         <div className="bg-white p-8 sm:p-10 border border-[#24201D]/15 shadow-xl relative overflow-hidden">
           <div className="text-center mb-8">
             <span className="font-serif text-3xl tracking-[0.25em] text-[#24201D] block mb-1">
-              LUMÉ
+              BEAUTY
             </span>
             <div className="inline-flex items-center gap-1.5 px-3 py-0.5 bg-[#EDE5DC] text-[#8A5243] text-[10px] uppercase tracking-[0.2em] font-semibold mt-1">
               <Lock className="w-3 h-3 text-[#B98272]" />

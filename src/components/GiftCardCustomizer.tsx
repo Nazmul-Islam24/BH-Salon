@@ -34,7 +34,7 @@ export const GiftCardCustomizer: React.FC<GiftCardCustomizerProps> = ({
 
   // Fresha verified partner booking URL for gift cards
   const FRESHA_GIFT_CARDS_URL =
-    'https://www.fresha.com/a/lume-hair-studio-new-york-mercer-street';
+    'https://www.fresha.com/a/beauty-hair-studio-new-york-mercer-street';
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const card = e.currentTarget.getBoundingClientRect();
@@ -132,7 +132,7 @@ export const GiftCardCustomizer: React.FC<GiftCardCustomizerProps> = ({
                 <div>
                   <div className="flex items-center space-x-2">
                     <span className="font-serif text-2xl sm:text-3xl tracking-[0.2em] font-normal">
-                      LUMÉ
+                      BEAUTY
                     </span>
                     <span
                       className={`text-[9px] uppercase tracking-widest px-2 py-0.5 rounded-full border ${

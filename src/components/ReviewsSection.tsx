@@ -6,7 +6,7 @@ export const ReviewsSection: React.FC = () => {
   const [isPaused, setIsPaused] = useState(false);
 
   // Official Google Reviews link
-  const googleReviewsUrl = 'https://www.google.com/search?q=LUME+Hair+Studio+New+York+reviews';
+  const googleReviewsUrl = 'https://www.google.com/search?q=BEAUTY+Hair+Studio+New+York+reviews';
 
   // Google SVG Icon for trust verification
   const GoogleIcon = () => (
@@ -148,7 +148,7 @@ export const ReviewsSection: React.FC = () => {
             <ExternalLink className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </a>
           <p className="text-[11px] text-[#756B63] mt-2 font-light">
-            Opens verified LUMÉ Google Reviews directly in a new tab
+            Opens verified BEAUTY Google Reviews directly in a new tab
           </p>
         </div>
       </div>

@@ -77,12 +77,12 @@ export const BALAYAGE_DETAIL = balayageHair;
 export const HAIR_TREATMENT_LOOK = hairTreatments;
 
 export const SALON_INFO = {
-  name: 'LUMÉ Hair',
+  name: 'BEAUTY Hair',
   tagline: 'Hair artistry designed around you.',
   phone: '(555) 123-4567',
-  email: 'concierge@lumehairstudio.com',
+  email: 'concierge@beautyhairstudio.com',
   address: '123 Mercer Street, SoHo, New York, NY 10012',
-  instagram: '@lumehairstudio',
+  instagram: '@beautyhairstudio',
   // Daily schedule listed individually for each day as explicitly requested:
   schedule: [
     { day: 'Monday', hours: '9:00 AM – 7:00 PM', status: 'Open today' },

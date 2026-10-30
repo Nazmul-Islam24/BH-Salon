@@ -20,7 +20,7 @@ export const InstagramSection: React.FC = () => {
             EDITORIAL DIARY
           </span>
           <h2 className="font-serif font-normal text-3xl sm:text-4xl text-[#24201D] tracking-tight">
-            FOLLOW THE LUMÉ LOOK
+            FOLLOW THE BEAUTY LOOK
           </h2>
           <a
             href="https://instagram.com"
@@ -28,7 +28,7 @@ export const InstagramSection: React.FC = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center space-x-1.5 text-xs text-[#756B63] hover:text-[#24201D] mt-2 font-mono tracking-wider transition-colors"
           >
-            <span>@lumehairstudio</span>
+            <span>@Beautyhairstudio</span>
             <ExternalLink className="w-3 h-3" />
           </a>
         </div>
@@ -45,7 +45,7 @@ export const InstagramSection: React.FC = () => {
             >
               <img
                 src={img.src}
-                alt={`LUMÉ Instagram Post ${idx + 1}`}
+                alt={`BEAUTY Instagram Post ${idx + 1}`}
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />

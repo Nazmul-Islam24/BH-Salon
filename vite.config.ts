@@ -60,7 +60,7 @@ function universalEmailApiPlugin(): Plugin {
                 },
               });
 
-              const fromEmail = parsed.from || `LUMÉ Hair Studio <${smtpUser.trim()}>`;
+              const fromEmail = parsed.from || `BEAUTY Hair Studio <${smtpUser.trim()}>`;
               const plainText = parsed.text || parsed.html.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
 
               const info = await transporter.sendMail({
@@ -71,12 +71,12 @@ function universalEmailApiPlugin(): Plugin {
                 text: plainText,
                 html: parsed.html,
                 headers: {
-                  'X-Mailer': 'LUME-Salon-Engine',
+                  'X-Mailer': 'BEAUTY-Salon-Engine',
                   'X-Priority': '3',
                 },
               });
 
-              console.log(`[LUMÉ Mailer] Direct Gmail dispatched: ${info.messageId} to ${recipients.join(', ')}`);
+              console.log(`[BEAUTY Mailer] Direct Gmail dispatched: ${info.messageId} to ${recipients.join(', ')}`);
               res.writeHead(200, { 'Content-Type': 'application/json' });
               return res.end(JSON.stringify({ success: true, messageId: info.messageId, provider: 'gmail-smtp' }));
             }
@@ -92,7 +92,7 @@ function universalEmailApiPlugin(): Plugin {
                 parsed.from ||
                 process.env.RESEND_FROM_EMAIL ||
                 process.env.VITE_RESEND_FROM_EMAIL ||
-                'LUMÉ Hair Studio <onboarding@resend.dev>';
+                'BEAUTY Hair Studio <onboarding@resend.dev>';
 
               const response = await fetch('https://api.resend.com/emails', {
                 method: 'POST',
@@ -115,7 +115,7 @@ function universalEmailApiPlugin(): Plugin {
 
             // 3. Graceful Dev Dispatch (Safe fallback without breaking UI)
             console.log(
-              `[LUMÉ Mailer Logged] Dispatched to: ${recipients.join(', ')} | Subject: "${parsed.subject}"`
+              `[BEAUTY Mailer Logged] Dispatched to: ${recipients.join(', ')} | Subject: "${parsed.subject}"`
             );
             res.writeHead(200, { 'Content-Type': 'application/json' });
             return res.end(
@@ -127,7 +127,7 @@ function universalEmailApiPlugin(): Plugin {
               })
             );
           } catch (err: any) {
-            console.error('[LUMÉ Mailer Error]:', err);
+            console.error('[BEAUTY Mailer Error]:', err);
             res.writeHead(500, { 'Content-Type': 'application/json' });
             return res.end(JSON.stringify({ error: err?.message || 'Server mailer error' }));
           }

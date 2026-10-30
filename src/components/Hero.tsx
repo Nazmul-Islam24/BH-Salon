@@ -14,7 +14,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onExploreWork }) => {
       <div className="absolute inset-0 z-0">
         <img
           src={HERO_IMAGE}
-          alt="LUMÉ Hair Studio model with radiant natural textured waves"
+          alt="BEAUTY Hair Studio model with radiant natural textured waves"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover object-center sm:object-right-top transition-transform duration-1000 scale-[1.02]"
         />

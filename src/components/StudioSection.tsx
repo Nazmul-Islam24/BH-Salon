@@ -30,7 +30,7 @@ export const StudioSection: React.FC = () => {
         <div className="relative aspect-16/9 sm:aspect-21/9 overflow-hidden bg-[#24201D] mb-8 sm:mb-10 shadow-md">
           <img
             src={SALON_INTERIOR}
-            alt="LUMÉ Hair Studio spacious luxury interior"
+            alt="BEAUTY Hair Studio spacious luxury interior"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover opacity-85"
           />

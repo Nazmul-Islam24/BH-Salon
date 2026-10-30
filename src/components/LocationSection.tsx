@@ -14,7 +14,7 @@ export const LocationSection: React.FC = () => {
                 LOCATION & HOURS
               </span>
               <h2 className="font-serif font-normal text-3xl sm:text-5xl text-[#24201D] tracking-tight">
-                LUMÉ HAIR STUDIO
+                BEAUTY HAIR STUDIO
               </h2>
               <p className="text-sm text-[#756B63] mt-2 font-light">
                 Nestled on historic cobblestone Mercer Street in SoHo. Concept studio location.
@@ -120,7 +120,7 @@ export const LocationSection: React.FC = () => {
                     <MapPin className="w-4 h-4 text-[#EDE5DC]" />
                   </div>
                   <h4 className="font-serif text-lg text-[#24201D] font-semibold">
-                    LUMÉ Hair Studio
+                    BEAUTY Hair Studio
                   </h4>
                   <p className="text-[11px] text-[#756B63] mt-1 font-light">
                     123 Mercer Street (between Prince & Spring)

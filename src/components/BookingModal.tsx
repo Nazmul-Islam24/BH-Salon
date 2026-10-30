@@ -71,7 +71,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
   const [isConfirmed, setIsConfirmed] = useState(false);
 
   // Fresha direct partner booking URL
-  const FRESHA_BOOKING_URL = 'https://www.fresha.com/a/lume-hair-studio-new-york-mercer-street';
+  const FRESHA_BOOKING_URL = 'https://www.fresha.com/a/beauty-hair-studio-new-york-mercer-street';
 
   // Whenever modal opens, reset to 'choose' options and default state
   useEffect(() => {
@@ -342,7 +342,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
           <div className="py-2">
             <div className="text-center mb-8">
               <span className="text-xs uppercase tracking-[0.25em] text-[#B98272] font-semibold block mb-1">
-                LUMÉ CONCIERGE
+                BEAUTY CONCIERGE
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl text-[#24201D] tracking-tight">
                 BOOK YOUR APPOINTMENT
@@ -435,7 +435,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
             </h3>
 
             <p className="text-xs sm:text-sm text-[#756B63] max-w-md mx-auto leading-relaxed font-light">
-              Thank you for choosing LUMÉ Hair Studio. The request is currently pending confirmation. The salon will contact you / email you once your appointment is confirmed.
+              Thank you for choosing BEAUTY Hair Studio. The request is currently pending confirmation. The salon will contact you / email you once your appointment is confirmed.
             </p>
 
             {/* Official Luxury Studio Booking Receipt Card (ডিজিটাল রসিদ) */}
@@ -444,7 +444,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               <div className="flex items-center justify-between border-b border-[#24201D]/15 pb-3">
                 <div>
                   <span className="font-serif text-2xl tracking-[0.2em] text-[#24201D] font-normal block">
-                    LUMÉ
+                    BEAUTY
                   </span>
                   <span className="text-[10px] tracking-widest uppercase text-[#B98272] font-semibold">
                     HAIR ARTISTRY · SOHO NEW YORK
@@ -539,7 +539,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
 
               {/* Studio Info Footnote */}
               <p className="text-[10px] text-[#756B63] text-center italic pt-2 border-t border-[#24201D]/10">
-                LUMÉ Hair Studio · 123 Mercer Street, SoHo, New York · (555) 123-4567<br/>
+                BEAUTY Hair Studio · 123 Mercer Street, SoHo, New York · (555) 123-4567<br/>
                 Saved directly to the studio schedule database.
               </p>
             </div>
@@ -1016,7 +1016,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                       className="w-full px-4 py-3 bg-white border border-[#24201D]/15 text-xs text-[#24201D] font-inter focus:outline-none focus:border-[#24201D]"
                     />
                     <p className="text-[11px] text-[#756B63] mt-1.5 font-light">
-                      LUMÉ SoHo sanctuary is open Monday – Saturday (Closed Sundays).
+                      BEAUTY SoHo sanctuary is open Monday – Saturday (Closed Sundays).
                     </p>
                   </div>
 

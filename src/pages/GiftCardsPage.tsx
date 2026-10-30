@@ -82,8 +82,8 @@ export const GiftCardsPage: React.FC<GiftCardsPageProps> = ({
 
   const faqs = [
     {
-      q: 'Do LUMÉ gift cards expire?',
-      a: 'Never. LUMÉ gift cards carry no expiration date and never lose value over time. They remain fully redeemable indefinitely.',
+      q: 'Do BEAUTY gift cards expire?',
+      a: 'Never. BEAUTY gift cards carry no expiration date and never lose value over time. They remain fully redeemable indefinitely.',
     },
     {
       q: 'Can the gift card be used across multiple visits?',
@@ -91,7 +91,7 @@ export const GiftCardsPage: React.FC<GiftCardsPageProps> = ({
     },
     {
       q: 'Can the voucher be redeemed for organic retail products?',
-      a: 'Absolutely. LUMÉ gift cards are valid for both in-salon hair services (balayage, precision cuts, treatments, threading, facials) and our curated European botanical retail line.',
+      a: 'Absolutely. BEAUTY gift cards are valid for both in-salon hair services (balayage, precision cuts, treatments, threading, facials) and our curated European botanical retail line.',
     },
     {
       q: 'Can I purchase physical luxury gift boxes for corporate or wedding gifts?',
@@ -109,7 +109,7 @@ export const GiftCardsPage: React.FC<GiftCardsPageProps> = ({
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <img
             src={cutFinish}
-            alt="LUMÉ luxury hair artistry gift cards"
+            alt="BEAUTY luxury hair artistry gift cards"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-40 mix-blend-multiply scale-105"
           />
@@ -128,7 +128,7 @@ export const GiftCardsPage: React.FC<GiftCardsPageProps> = ({
           </h1>
 
           <p className="text-sm sm:text-base text-[#756B63] max-w-2xl mx-auto font-light leading-relaxed">
-            Give the gift of pure presence, transformation, and unhurried luxury. A LUMÉ gift card is more than a salon voucher—it is an invitation to our tranquil SoHo sanctuary, where master colorists, precision cuts, and organic rituals await.
+            Give the gift of pure presence, transformation, and unhurried luxury. A BEAUTY gift card is more than a salon voucher—it is an invitation to our tranquil SoHo sanctuary, where master colorists, precision cuts, and organic rituals await.
           </p>
         </div>
       </section>
@@ -200,7 +200,7 @@ export const GiftCardsPage: React.FC<GiftCardsPageProps> = ({
                     Ideal for: {pkg.recommendedFor}
                   </span>
                   <a
-                    href="https://www.fresha.com/a/lume-hair-studio-new-york-mercer-street"
+                    href="https://www.fresha.com/a/beauty-hair-studio-new-york-mercer-street"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full py-2.5 bg-[#F7F3EE] hover:bg-[#24201D] text-[#24201D] hover:text-[#EDE5DC] border border-[#24201D]/15 text-xs uppercase tracking-wider font-semibold transition-all flex items-center justify-center space-x-1.5"
@@ -224,7 +224,7 @@ export const GiftCardsPage: React.FC<GiftCardsPageProps> = ({
             EFFORTLESS PROCESS
           </span>
           <h2 className="font-serif font-normal text-3xl sm:text-5xl text-[#24201D] tracking-tight">
-            HOW LUMÉ GIFTING WORKS
+            HOW BEAUTY GIFTING WORKS
           </h2>
         </div>
 

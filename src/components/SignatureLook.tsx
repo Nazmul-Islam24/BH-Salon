@@ -13,7 +13,7 @@ export const SignatureLook: React.FC<SignatureLookProps> = ({ onExploreLookbook 
       <div className="absolute inset-0 z-0">
         <img
           src={BALAYAGE_DETAIL}
-          alt="The LUMÉ Signature soft texture and natural movement"
+          alt="The BEAUTY Signature soft texture and natural movement"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover object-center scale-[1.03] transition-transform duration-1000"
         />
@@ -28,7 +28,7 @@ export const SignatureLook: React.FC<SignatureLookProps> = ({ onExploreLookbook 
         </span>
 
         <h2 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal text-white tracking-tight mb-8">
-          THE LUMÉ SIGNATURE
+          THE BEAUTY SIGNATURE
         </h2>
 
         <div className="space-y-2 mb-10 max-w-md mx-auto">

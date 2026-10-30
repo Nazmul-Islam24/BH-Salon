@@ -50,7 +50,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ onOpenBooking }) => {
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <img
             src={gallery}
-            alt="LUMÉ visual portfolio and transformations"
+            alt="BEAUTY visual portfolio and transformations"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-40 mix-blend-multiply scale-105"
           />
@@ -332,7 +332,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ onOpenBooking }) => {
                   {/* Modal Action Footer */}
                   <div className="pt-4 border-t border-[#24201D]/15 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                     <div className="text-xs text-[#756B63]">
-                      <span>Crafted by <strong>{selectedItem.stylistName}</strong> at LUMÉ SoHo Studio</span>
+                      <span>Crafted by <strong>{selectedItem.stylistName}</strong> at BEAUTY SoHo Studio</span>
                     </div>
 
                     <button

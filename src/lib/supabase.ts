@@ -15,7 +15,7 @@ const supabaseAnonKey =
 
 if (!rawUrl || !supabaseAnonKey) {
   console.warn(
-    '[LUMÉ Supabase] Supabase URL or Publishable key is missing. Please verify your .env file.'
+    '[BEAUTY Supabase] Supabase URL or Publishable key is missing. Please verify your .env file.'
   );
 }
 

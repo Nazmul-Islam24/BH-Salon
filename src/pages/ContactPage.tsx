@@ -27,7 +27,7 @@ export const ContactPage: React.FC = () => {
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <img
             src={lumeSalon}
-            alt="LUMÉ concierge and studio appointments"
+            alt="BEAUTY concierge and studio appointments"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-40 mix-blend-multiply scale-105"
           />
@@ -39,7 +39,7 @@ export const ContactPage: React.FC = () => {
             CONCIERGE & STUDIO
           </span>
           <h1 className="font-serif font-normal text-3xl sm:text-5xl lg:text-6xl text-[#24201D] tracking-tight mb-2">
-            CONNECT WITH LUMÉ
+            CONNECT WITH BEAUTY
           </h1>
           <p className="text-xs sm:text-sm text-[#756B63] max-w-lg mx-auto font-light leading-relaxed">
             Have questions regarding custom treatments, styling, or scheduling? Our concierge team is here to assist.
@@ -147,7 +147,7 @@ export const ContactPage: React.FC = () => {
                 <CheckCircle className="w-8 h-8 text-[#6B8E72] mx-auto" />
                 <h4 className="font-serif text-2xl text-[#24201D]">Thank You</h4>
                 <p className="text-xs text-[#756B63] leading-relaxed">
-                  Your message has been received. A LUMÉ hair concierge will contact you shortly to address your inquiry.
+                  Your message has been received. A BEAUTY hair concierge will contact you shortly to address your inquiry.
                 </p>
                 <button
                   type="button"

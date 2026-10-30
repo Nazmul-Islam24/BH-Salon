@@ -33,7 +33,7 @@ export const StylistsPage: React.FC<StylistsPageProps> = ({
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <img
             src={homeHero1}
-            alt="LUMÉ master stylists and creative directors"
+            alt="BEAUTY master stylists and creative directors"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-50 mix-blend-multiply scale-105"
           />

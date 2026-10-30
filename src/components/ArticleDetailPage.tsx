@@ -61,7 +61,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
       jobTitle: 'Master Stylist & Hair Artist',
       worksFor: {
         '@type': 'HairSalon',
-        name: 'LUMÉ Hair Studio',
+        name: 'BEAUTY Hair Studio',
         address: {
           '@type': 'PostalAddress',
           streetAddress: '123 Mercer Street',
@@ -74,15 +74,15 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
     },
     publisher: {
       '@type': 'Organization',
-      name: 'LUMÉ Hair Studio',
+      name: 'BEAUTY Hair Studio',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://lumehairstudio.com/logo.png',
+        url: 'https://beautyhairstudio.com/logo.png',
       },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': typeof window !== 'undefined' ? window.location.href : 'https://lumehairstudio.com/journal',
+      '@id': typeof window !== 'undefined' ? window.location.href : 'https://beautyhairstudio.com/journal',
     },
     articleSection: article.category,
     wordCount: 750,
@@ -102,7 +102,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
       case 'Amara Khan':
         return 'Holistic Scalp & Wellness Therapist';
       default:
-        return 'LUMÉ Resident Hair Artist';
+        return 'BEAUTY Resident Hair Artist';
     }
   };
 
@@ -133,7 +133,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
             <nav aria-label="Breadcrumb" className="hidden sm:flex items-center space-x-2 text-xs text-[#756B63]">
               <span>About</span>
               <span>/</span>
-              <span>The LUMÉ Journal</span>
+              <span>The BEAUTY Journal</span>
               <span>/</span>
               <span className="text-[#24201D] font-medium truncate max-w-[160px]">{article.category}</span>
             </nav>
@@ -257,7 +257,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
               ))}
 
               <p>
-                At LUMÉ Hair Studio, our holistic philosophy centers on the longevity of your look. Rather than aggressive treatments that offer short-lived cosmetic sheen at the expense of cuticle integrity, every formula and cut is engineered to grow out gracefully with your natural hair patterns.
+                At BEAUTY Hair Studio, our holistic philosophy centers on the longevity of your look. Rather than aggressive treatments that offer short-lived cosmetic sheen at the expense of cuticle integrity, every formula and cut is engineered to grow out gracefully with your natural hair patterns.
               </p>
             </div>
 
@@ -292,7 +292,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
                   Written by {article.author}
                 </h4>
                 <p className="text-xs text-[#756B63] font-light leading-relaxed">
-                  {getAuthorRole(article.author)} at LUMÉ Hair Studio in SoHo, New York. Specializing in bespoke European styling, French balayage precision, and clean botanical hair restoration.
+                  {getAuthorRole(article.author)} at BEAUTY Hair Studio in SoHo, New York. Specializing in bespoke European styling, French balayage precision, and clean botanical hair restoration.
                 </p>
                 <div className="pt-2">
                   <button
@@ -331,7 +331,7 @@ export const ArticleDetailPage: React.FC<ArticleDetailPageProps> = ({
             {/* Studio Information Quick Box */}
             <div className="bg-white border border-[#24201D]/15 p-6 space-y-3">
               <h4 className="font-serif text-base font-medium text-[#24201D]">
-                LUMÉ Hair Studio SoHo
+                BEAUTY Hair Studio SoHo
               </h4>
               <p className="text-xs text-[#756B63] font-light leading-relaxed">
                 {SALON_INFO.address}<br />

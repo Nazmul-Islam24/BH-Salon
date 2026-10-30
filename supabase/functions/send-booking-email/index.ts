@@ -23,7 +23,7 @@ serve(async (req: Request) => {
     const supabaseUrl = Deno.env.get("SUPABASE_URL") || "";
     const supabaseServiceRoleKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "";
     const resendApiKey = Deno.env.get("RESEND_API_KEY") || "";
-    const resendFromEmail = Deno.env.get("RESEND_FROM_EMAIL") || "LUMÉ Hair Studio <onboarding@resend.dev>";
+    const resendFromEmail = Deno.env.get("RESEND_FROM_EMAIL") || "BEAUTY Hair Studio <onboarding@resend.dev>";
     const ownerEmail = Deno.env.get("OWNER_EMAIL") || "";
 
     const { appointmentId, eventType } = await req.json();
@@ -146,18 +146,18 @@ serve(async (req: Request) => {
     if (eventType === "booking_received") {
       // Customer Email
       await recordNotification("booking_received_customer", async () => {
-        const subject = "Your LUMÉ Appointment Request Has Been Received";
+        const subject = "Your BEAUTY Appointment Request Has Been Received";
         const html = `
           <div style="font-family: 'Georgia', serif; max-width: 600px; margin: 0 auto; background: #F7F3EE; color: #24201D; padding: 32px; border: 1px solid #EDE5DC;">
             <div style="text-align: center; border-bottom: 1px solid rgba(36,32,29,0.1); padding-bottom: 24px; margin-bottom: 24px;">
-              <h1 style="letter-spacing: 0.25em; font-size: 28px; margin: 0; color: #24201D;">LUMÉ</h1>
+              <h1 style="letter-spacing: 0.25em; font-size: 28px; margin: 0; color: #24201D;">BEAUTY</h1>
               <p style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #B98272; margin-top: 6px;">Hair Artistry · SoHo, New York</p>
             </div>
             
             <h2 style="font-size: 22px; font-weight: normal; margin-bottom: 16px;">Appointment Request Received</h2>
             <p style="font-size: 14px; line-height: 1.6; color: #50463E;">Dear ${appointment.customer_name},</p>
             <p style="font-size: 14px; line-height: 1.6; color: #50463E;">
-              Thank you for choosing LUMÉ Hair Studio. We have received your booking request. 
+              Thank you for choosing BEAUTY Hair Studio. We have received your booking request. 
               <strong>Your appointment is currently pending confirmation</strong> by our studio concierge.
             </p>
             
@@ -177,8 +177,8 @@ serve(async (req: Request) => {
             </p>
 
             <div style="border-top: 1px solid rgba(36,32,29,0.1); margin-top: 32px; padding-top: 20px; font-size: 11px; color: #756B63; text-align: center;">
-              <p>LUMÉ Hair Studio · 123 Mercer Street, SoHo, New York, NY 10012</p>
-              <p>Need to modify your request? Call (555) 123-4567 or email concierge@lumehairstudio.com</p>
+              <p>BEAUTY Hair Studio · 123 Mercer Street, SoHo, New York, NY 10012</p>
+              <p>Need to modify your request? Call (555) 123-4567 or email concierge@beautyhairstudio.com</p>
             </div>
           </div>
         `;
@@ -207,7 +207,7 @@ serve(async (req: Request) => {
                 <li><strong>Status:</strong> Pending</li>
               </ul>
 
-              <p style="font-size: 13px; color: #6B7280; margin-top: 24px;">Log in to the LUMÉ Admin Dashboard to confirm or reschedule this request.</p>
+              <p style="font-size: 13px; color: #6B7280; margin-top: 24px;">Log in to the BEAUTY Admin Dashboard to confirm or reschedule this request.</p>
             </div>
           `;
           return sendResendMail(ownerEmail, subject, html);
@@ -220,18 +220,18 @@ serve(async (req: Request) => {
     // ========================================================================
     else if (eventType === "booking_confirmed") {
       await recordNotification("booking_confirmed_customer", async () => {
-        const subject = "Your LUMÉ Appointment is Confirmed";
+        const subject = "Your BEAUTY Appointment is Confirmed";
         const html = `
           <div style="font-family: 'Georgia', serif; max-width: 600px; margin: 0 auto; background: #F7F3EE; color: #24201D; padding: 32px; border: 1px solid #EDE5DC;">
             <div style="text-align: center; border-bottom: 1px solid rgba(36,32,29,0.1); padding-bottom: 24px; margin-bottom: 24px;">
-              <h1 style="letter-spacing: 0.25em; font-size: 28px; margin: 0; color: #24201D;">LUMÉ</h1>
+              <h1 style="letter-spacing: 0.25em; font-size: 28px; margin: 0; color: #24201D;">BEAUTY</h1>
               <p style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #B98272; margin-top: 6px;">Hair Artistry · SoHo, New York</p>
             </div>
             
             <h2 style="font-size: 22px; font-weight: normal; margin-bottom: 16px; color: #3F6647;">Appointment Confirmed</h2>
             <p style="font-size: 14px; line-height: 1.6; color: #50463E;">Dear ${appointment.customer_name},</p>
             <p style="font-size: 14px; line-height: 1.6; color: #50463E;">
-              We are delighted to confirm your upcoming appointment at LUMÉ Hair Studio. Your reserved time has been secured on our schedule.
+              We are delighted to confirm your upcoming appointment at BEAUTY Hair Studio. Your reserved time has been secured on our schedule.
             </p>
             
             <div style="background: #FFFFFF; border: 1px solid rgba(36,32,29,0.15); padding: 20px; margin: 24px 0;">
@@ -250,7 +250,7 @@ serve(async (req: Request) => {
             </p>
 
             <div style="border-top: 1px solid rgba(36,32,29,0.1); margin-top: 32px; padding-top: 20px; font-size: 11px; color: #756B63; text-align: center;">
-              <p>LUMÉ Hair Studio · 123 Mercer Street, SoHo, New York, NY 10012</p>
+              <p>BEAUTY Hair Studio · 123 Mercer Street, SoHo, New York, NY 10012</p>
               <p>For rescheduling, please provide 48 hours notice at (555) 123-4567.</p>
             </div>
           </div>
@@ -264,11 +264,11 @@ serve(async (req: Request) => {
     // ========================================================================
     else if (eventType === "booking_cancelled") {
       await recordNotification("booking_cancelled_customer", async () => {
-        const subject = "Update Regarding Your LUMÉ Appointment";
+        const subject = "Update Regarding Your BEAUTY Appointment";
         const html = `
           <div style="font-family: 'Georgia', serif; max-width: 600px; margin: 0 auto; background: #F7F3EE; color: #24201D; padding: 32px; border: 1px solid #EDE5DC;">
             <div style="text-align: center; border-bottom: 1px solid rgba(36,32,29,0.1); padding-bottom: 24px; margin-bottom: 24px;">
-              <h1 style="letter-spacing: 0.25em; font-size: 28px; margin: 0; color: #24201D;">LUMÉ</h1>
+              <h1 style="letter-spacing: 0.25em; font-size: 28px; margin: 0; color: #24201D;">BEAUTY</h1>
             </div>
             
             <h2 style="font-size: 20px; font-weight: normal; margin-bottom: 16px; color: #8A5243;">Appointment Status Update</h2>
@@ -282,7 +282,7 @@ serve(async (req: Request) => {
             </p>
 
             <div style="border-top: 1px solid rgba(36,32,29,0.1); margin-top: 32px; padding-top: 20px; font-size: 11px; color: #756B63; text-align: center;">
-              <p>LUMÉ Hair Studio · 123 Mercer Street, SoHo, New York · (555) 123-4567</p>
+              <p>BEAUTY Hair Studio · 123 Mercer Street, SoHo, New York · (555) 123-4567</p>
             </div>
           </div>
         `;

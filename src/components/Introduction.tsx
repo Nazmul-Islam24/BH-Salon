@@ -16,7 +16,7 @@ export const Introduction: React.FC<IntroductionProps> = ({ onDiscoverLume }) =>
             <div className="relative aspect-4/3 sm:aspect-16/11 overflow-hidden shadow-sm bg-[#EDE5DC]">
               <img
                 src={SALON_INTERIOR}
-                alt="LUMÉ Hair Studio serene architectural interior with travertine counters"
+                alt="BEAUTY Hair Studio serene architectural interior with travertine counters"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
@@ -41,7 +41,7 @@ export const Introduction: React.FC<IntroductionProps> = ({ onDiscoverLume }) =>
             </h2>
 
             <p className="text-base text-[#756B63] leading-relaxed font-light">
-              We founded LUMÉ with a single guiding intention: to strip away the chaos of conventional commercial salons and replace it with an unhurried, mindful experience.
+              We founded BEAUTY with a single guiding intention: to strip away the chaos of conventional commercial salons and replace it with an unhurried, mindful experience.
             </p>
 
             <p className="text-base text-[#756B63] leading-relaxed font-light">
@@ -53,7 +53,7 @@ export const Introduction: React.FC<IntroductionProps> = ({ onDiscoverLume }) =>
                 onClick={onDiscoverLume}
                 className="inline-flex items-center space-x-3 text-xs uppercase tracking-[0.2em] font-semibold text-[#24201D] hover:text-[#B98272] group cursor-pointer border-b border-[#24201D] hover:border-[#B98272] pb-1 transition-all"
               >
-                <span>DISCOVER LUMÉ</span>
+                <span>DISCOVER BEAUTY</span>
                 <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1.5" />
               </button>
             </div>

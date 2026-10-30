@@ -65,7 +65,7 @@ export const PricingPage: React.FC<PricingPageProps> = ({
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <img
             src={price}
-            alt="LUMÉ transparent luxury pricing and artistry"
+            alt="BEAUTY transparent luxury pricing and artistry"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center opacity-35 mix-blend-multiply scale-105"
           />

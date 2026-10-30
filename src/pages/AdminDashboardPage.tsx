@@ -71,10 +71,10 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
           hasSession = true;
         }
       } catch (err) {
-        console.warn('[LUMÉ Admin] Supabase session check notice:', err);
+        console.warn('[BEAUTY Admin] Supabase session check notice:', err);
       }
 
-      const localSession = typeof window !== 'undefined' ? localStorage.getItem('lume_admin_session') : null;
+      const localSession = typeof window !== 'undefined' ? localStorage.getItem('Beauty_admin_session') : null;
       if (localSession) {
         userEmail = localSession;
         hasSession = true;
@@ -237,7 +237,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
       await supabase.auth.signOut();
     } catch (_) {}
     if (typeof window !== 'undefined') {
-      localStorage.removeItem('lume_admin_session');
+      localStorage.removeItem('Beauty_admin_session');
     }
     onLogout();
   };
@@ -249,7 +249,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <span className="font-serif text-2xl tracking-[0.2em] text-[#F7F3EE]">
-              LUMÉ
+              BEAUTY
             </span>
             <span className="hidden sm:inline-block px-2.5 py-0.5 bg-[#EDE5DC]/10 text-[#D4AF37] border border-[#D4AF37]/30 text-[10px] uppercase tracking-widest font-semibold rounded-xs">
               Salon Concierge Admin

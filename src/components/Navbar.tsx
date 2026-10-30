@@ -112,10 +112,10 @@ export const Navbar: React.FC<NavbarProps> = ({
             <button
               onClick={() => handleLinkClick('home')}
               className="group text-left cursor-pointer focus:outline-none focus-visible:ring-1 focus-visible:ring-[#24201D]"
-              aria-label="LUMÉ Hair Studio Home"
+              aria-label="BEAUTY Hair Studio Home"
             >
-              <span className="font-serif text-2xl sm:text-3xl tracking-[0.2em] font-normal text-[#24201D] transition-opacity group-hover:opacity-80">
-                LUMÉ
+              <span className="font-serif text-2xl sm:text-3xl tracking-[0.2em] font-bold text-[#24201D] transition-opacity group-hover:opacity-80">
+                BEAUTY
               </span>
             </button>
 
@@ -297,8 +297,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={(e) => e.stopPropagation()}
           >
             <div>
-              <div className="flex items-center justify-between pb-5 border-b border-[#24201D]/10">
-                <span className="font-serif text-2xl tracking-[0.2em] text-[#24201D]">LUMÉ</span>
+              <div className="flex items-center justify-between font-bold pb-5 border-b border-[#24201D]/10">
+                <span className="font-serif text-2xl tracking-[0.2em] text-[#24201D]">BEAUTY</span>
                 <button
                   onClick={() => setMobileMenuOpen(false)}
                   className="p-1.5 text-[#756B63] hover:text-[#24201D] cursor-pointer"

@@ -29,10 +29,10 @@ export const WhyLume: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-xl mx-auto mb-10 sm:mb-12">
           <span className="text-xs uppercase tracking-[0.25em] text-[#B98272] font-semibold block mb-1">
-            THE LUMÉ DIFFERENCE
+            THE BEAUTY DIFFERENCE
           </span>
           <h2 className="font-serif font-normal text-3xl sm:text-5xl text-[#24201D] tracking-tight">
-            WHY LUMÉ?
+            WHY BEAUTY?
           </h2>
         </div>
 
